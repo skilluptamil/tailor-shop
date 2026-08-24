@@ -84,15 +84,15 @@
   <section class="py-5 bg-sand">
     <div class="container max-w-700 mx-auto text-center">
       <div class="d-flex justify-content-center align-items-center gap-2 mb-3">
-        <span class="badge badge-gold">Style & Craftsmanship</span>
-        <span class="text-muted small">• 5 min read • Published Oct 14, 2026</span>
+        <span class="badge badge-gold" id="blogDetailCategory">Style & Craftsmanship</span>
+        <span class="text-muted small" id="blogDetailMeta">• 5 min read • Published Oct 14, 2026</span>
       </div>
-      <h1 class="display-5 fw-bold text-heading mb-4">The Anatomy of a Bespoke Suit: Canvas vs Fused Construction</h1>
+      <h1 class="display-5 fw-bold text-heading mb-4" id="blogDetailTitle">The Anatomy of a Bespoke Suit: Canvas vs Fused Construction</h1>
       <div class="d-flex justify-content-center align-items-center gap-3">
-        <img src="assets/images/team/team-1.jpg" alt="Arthur Vance" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover;">
+        <img src="assets/images/team/team-1.jpg" alt="Arthur Vance" id="blogDetailAuthorAvatar" class="rounded-circle" style="width: 48px; height: 48px; object-fit: cover;">
         <div class="text-start">
-          <div class="fw-bold text-heading mb-0">Arthur Vance</div>
-          <small class="text-muted">Master Tailor & Founder</small>
+          <div class="fw-bold text-heading mb-0" id="blogDetailAuthorName">Arthur Vance</div>
+          <small class="text-muted" id="blogDetailAuthorRole">Master Tailor & Founder</small>
         </div>
       </div>
     </div>
@@ -101,38 +101,40 @@
   <!-- Article Body -->
   <article class="section-padding">
     <div class="container" style="max-width: 800px;">
-      <img src="assets/images/blog/blog-1.jpg" alt="Suit Canvas Drafting" class="rounded-4 shadow-lg border border-1 w-100 mb-5">
+      <img src="assets/images/blog/blog-1.jpg" alt="Article Visual" id="blogDetailHeroImg" class="rounded-4 shadow-lg border border-1 w-100 mb-5">
 
-      <div class="fs-5 leading-relaxed text-muted mb-4">
+      <div class="fs-5 leading-relaxed text-muted mb-4" id="blogDetailLead">
         When investing in a tailored suit, the single most critical structural element is invisible to the casual observer: the interlining hidden between the outer wool shell and inner silk lining.
       </div>
 
-      <h2 class="h3 text-heading mt-5 mb-3">What is Fused Construction?</h2>
-      <p class="text-muted leading-relaxed">
-        Most ready-to-wear commercial suits use a chemical glue interlining called fusing. While cost-effective to produce rapidly by machine, fused jackets can become stiff, bubble after repeated dry cleanings, and lack the ability to adapt to body warmth and movements.
-      </p>
+      <div id="blogDetailSections">
+        <h2 class="h3 text-heading mt-5 mb-3">What is Fused Construction?</h2>
+        <p class="text-muted leading-relaxed">
+          Most ready-to-wear commercial suits use a chemical glue interlining called fusing. While cost-effective to produce rapidly by machine, fused jackets can become stiff, bubble after repeated dry cleanings, and lack the ability to adapt to body warmth and movements.
+        </p>
 
-      <h2 class="h3 text-heading mt-5 mb-3">The Magic of Full Floating Canvas</h2>
-      <p class="text-muted leading-relaxed">
-        True bespoke tailoring utilizes a free-floating canvas cut from natural horsehair and wool. This canvas is suspended inside the jacket chest piece with thousands of loose pad stitches. As you wear the suit, the natural fibers warm up and gradually mold to the unique curvature of your chest and shoulders.
-      </p>
+        <h2 class="h3 text-heading mt-5 mb-3">The Magic of Full Floating Canvas</h2>
+        <p class="text-muted leading-relaxed">
+          True bespoke tailoring utilizes a free-floating canvas cut from natural horsehair and wool. This canvas is suspended inside the jacket chest piece with thousands of loose pad stitches. As you wear the suit, the natural fibers warm up and gradually mold to the unique curvature of your chest and shoulders.
+        </p>
 
-      <blockquote class="p-4 my-4 bg-sand border-start border-4 border-warning rounded-3 fst-italic text-heading">
-        "A full canvas suit is living tailoring. It breathes with you, drapes gracefully over your torso, and looks even better on year five than it did on day one."
-      </blockquote>
+        <blockquote class="p-4 my-4 bg-sand border-start border-4 border-warning rounded-3 fst-italic text-heading">
+          "A full canvas suit is living tailoring. It breathes with you, drapes gracefully over your torso, and looks even better on year five than it did on day one."
+        </blockquote>
 
-      <h2 class="h3 text-heading mt-5 mb-3">How to Test Your Existing Suits</h2>
-      <p class="text-muted leading-relaxed">
-        Perform the simple pinch test: Pinch the fabric on the chest of your jacket just below the breast pocket. Gently pull the outer wool and inner lining apart. If you feel a distinct third layer floating freely in the middle, you have a canvas jacket!
-      </p>
+        <h2 class="h3 text-heading mt-5 mb-3">How to Test Your Existing Suits</h2>
+        <p class="text-muted leading-relaxed">
+          Perform the simple pinch test: Pinch the fabric on the chest of your jacket just below the breast pocket. Gently pull the outer wool and inner lining apart. If you feel a distinct third layer floating freely in the middle, you have a canvas jacket!
+        </p>
+      </div>
 
       <!-- Author Bio -->
       <div class="card bg-sand border-0 rounded-4 p-4 my-5">
         <div class="d-flex align-items-center gap-4">
-          <img src="assets/images/team/team-1.jpg" alt="Arthur Vance" class="rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
+          <img src="assets/images/team/team-1.jpg" alt="Author" id="blogDetailBioAvatar" class="rounded-circle shadow-sm" style="width: 80px; height: 80px; object-fit: cover;">
           <div>
-            <h5 class="h6 mb-1 text-heading">Written by Arthur Vance</h5>
-            <p class="small text-muted mb-2">Master Tailor with 30+ years crafting bespoke suits in London and New York. Dedicated to educating discerning gentlemen on artisanal craftsmanship.</p>
+            <h5 class="h6 mb-1 text-heading" id="blogDetailBioName">Written by Arthur Vance</h5>
+            <p class="small text-muted mb-2" id="blogDetailBioDesc">Master Tailor with 30+ years crafting bespoke suits in London and New York. Dedicated to educating discerning gentlemen on artisanal craftsmanship.</p>
             <div class="d-flex gap-2">
               <a href="#" class="social-icon-link bg-surface text-heading" style="width: 32px; height: 32px; font-size: 0.875rem;"><i class="bi bi-linkedin"></i></a>
               <a href="#" class="social-icon-link bg-surface text-heading" style="width: 32px; height: 32px; font-size: 0.875rem;"><i class="bi bi-instagram"></i></a>

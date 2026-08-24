@@ -285,6 +285,284 @@ document.addEventListener('DOMContentLoaded', () => {
   hydrateServiceDetailsPage();
 
   /* --------------------------------------------------------------------------
+     4c. Dynamic Blog Details Page Data Hydration
+  -------------------------------------------------------------------------- */
+  const blogArticlesData = {
+    'master-cut': {
+      title: "The Art of the Master Cut: Inside Sartoria's 40-Hour Bespoke Construction",
+      category: "Featured Editorial",
+      readTime: "• 8 min read • Published Nov 15, 2026",
+      authorName: "Arthur Vance",
+      authorRole: "Master Tailor & Founder",
+      authorAvatar: "assets/images/team/team-1.jpg",
+      heroImage: "assets/images/blog/blog-hero.jpg",
+      lead: "From hand-padded lapels to full floating horsehair chest canvas, discover the time-honored artisanal techniques that distinguish true bespoke tailoring from commercial mass production.",
+      sections: [
+        {
+          heading: "The 3D Blueprint: Drafting From Raw Chalk",
+          content: "Every bespoke journey begins with over 35 anatomical measurements. Unlike made-to-measure systems that modify pre-existing block patterns, our master cutters draw an original paper template exclusively for your posture, shoulder slope, and chest expansion."
+        },
+        {
+          heading: "The Floating Horsehair Chest Piece",
+          content: "Inside every Sartoria jacket lies a loose, non-adhesive internal canvas composed of natural Mongolian horsehair and Irish linen. Over 4,000 hand pad stitches secure the canvas, granting the garment the unique ability to mold itself to your chest contours with body heat."
+        },
+        {
+          heading: "The Multi-Stage Basted Fitting",
+          content: "Before any permanent seam is sewn, clients experience the skeleton baste fitting. Held together with white basting thread, the master tailor adjusts sleeve pitch, waist balance, and gorge height directly on the client's body for effortless posture alignment."
+        }
+      ],
+      quote: "Bespoke is not merely a method of garment construction; it is an architectural dialogue between human silhouette and living natural textiles.",
+      authorBio: "Master Tailor with 30+ years crafting bespoke suiting in Savile Row and New York. Dedicated to preserving historic haute couture craftsmanship."
+    },
+    'suit-canvas': {
+      title: "The Anatomy of a Bespoke Suit: Canvas vs Fused Construction",
+      category: "Style & Trends",
+      readTime: "• 5 min read • Published Oct 14, 2026",
+      authorName: "Arthur Vance",
+      authorRole: "Master Tailor & Founder",
+      authorAvatar: "assets/images/team/team-1.jpg",
+      heroImage: "assets/images/blog/blog-1.jpg",
+      lead: "When investing in a tailored suit, the single most critical structural element is invisible to the casual observer: the interlining hidden between the outer wool shell and inner silk lining.",
+      sections: [
+        {
+          heading: "What is Fused Construction?",
+          content: "Most ready-to-wear commercial suits use a chemical glue interlining called fusing. While cost-effective to produce rapidly by machine, fused jackets can become stiff, bubble after repeated dry cleanings, and lack the ability to adapt to body warmth and movements."
+        },
+        {
+          heading: "The Magic of Full Floating Canvas",
+          content: "True bespoke tailoring utilizes a free-floating canvas cut from natural horsehair and wool. This canvas is suspended inside the jacket chest piece with thousands of loose pad stitches. As you wear the suit, the natural fibers warm up and gradually mold to the unique curvature of your chest and shoulders."
+        },
+        {
+          heading: "How to Test Your Existing Suits",
+          content: "Perform the simple pinch test: Pinch the fabric on the chest of your jacket just below the breast pocket. Gently pull the outer wool and inner lining apart. If you feel a distinct third layer floating freely in the middle, you have a canvas jacket!"
+        }
+      ],
+      quote: "A full canvas suit is living tailoring. It breathes with you, drapes gracefully over your torso, and looks even better on year five than it did on day one.",
+      authorBio: "Master Tailor with 30+ years crafting bespoke suiting in London and New York. Dedicated to educating discerning gentlemen on artisanal craftsmanship."
+    },
+    'natural-textiles': {
+      title: "Natural Textiles 101: Silk Momme, Wool Super Counts & Linen GSM",
+      category: "Fabric Guide",
+      readTime: "• 7 min read • Published Oct 18, 2026",
+      authorName: "Helena Vance",
+      authorRole: "Creative Director & Couturier",
+      authorAvatar: "assets/images/team/team-2.jpg",
+      heroImage: "assets/images/blog/blog-2.jpg",
+      lead: "An essential primer on fabric density, yarn micron grades, and breathability metrics when choosing custom stitching materials.",
+      sections: [
+        {
+          heading: "Demystifying Wool Super Counts (Super 110s to Super 180s)",
+          content: "The 'Super' number represents the fineness of raw wool fibers measured in microns. Super 110s offer durable daily boardroom wear, whereas Super 150s and 180s create butter-soft, fluid evening suits that drape with liquid grace."
+        },
+        {
+          heading: "Understanding Silk Momme Weight in Couture",
+          content: "Momme (mm) measures silk density per square yard. For lightweight bridal scarves and sheer blouse sleeves, 8-12 mm chiffon provides ethereal flow. For structured lehenga skirts and corsets, 19-30 mm mulberry silk satin provides luxurious body and zero transparency."
+        },
+        {
+          heading: "Linen GSM and Seasonal Breathability",
+          content: "Grams per Square Meter (GSM) indicates fabric heaviness. Crisp Irish linen ranges between 220-280 GSM for summer safari jackets, maintaining sharp crease lines while allowing optimal air circulation even in humid climates."
+        }
+      ],
+      quote: "Quality cloth is the soul of bespoke tailoring. When raw fibers are pure and ethically harvested, the finished garment drapes with unmistakable majesty.",
+      authorBio: "Couture designer specializing in European luxury textiles, hand-painted organzas, and bridal draping techniques."
+    },
+    'bridal-timeline': {
+      title: "Bridal Fitting Timelines: When to Book Your Trousseau",
+      category: "Bridal Couture",
+      readTime: "• 6 min read • Published Oct 22, 2026",
+      authorName: "Rajesh K.",
+      authorRole: "Master Embroiderer & Bridal Couturier",
+      authorAvatar: "assets/images/team/team-3.jpg",
+      heroImage: "assets/images/blog/blog-3.jpg",
+      lead: "Plan your wedding ensemble journey with our comprehensive 6-month countdown from initial sketch consultations to final veil styling.",
+      sections: [
+        {
+          heading: "Month 6 to 5: Silhouette & Swatch Consultation",
+          content: "Begin with moodboards, color palette curation, and textile selection. We measure your exact posture and create personalized 3D fashion sketches illustrating neckline options, can-can volume, and embroidery placement."
+        },
+        {
+          heading: "Month 4 to 3: The Muslin Toile Fitting",
+          content: "A trial garment in cotton calico is tailored to test the bustier boning, waist slope, and skirt drop. Any proportion tweaks are finalized on the pattern before expensive silk brocade or velvet is cut."
+        },
+        {
+          heading: "Month 2 to 1: Zardozi Hand-Embroidering & Final Pressing",
+          content: "Over 120 hours of intricate dabka, sequin, and threadwork are completed by our master artisans. The final fitting takes place with your bridal footwear and jewelry to ensure perfect floor sweep."
+        }
+      ],
+      quote: "A bridal trousseau should celebrate who you are. Giving the artisans sufficient lead time turns custom dressmaking into an unforgettable milestone of your wedding celebration.",
+      authorBio: "Bridal couture artisan with 20+ years expertise in Indian royal lehengas, zardozi needlework, and European bridal corsetry."
+    },
+    'alterations-guide': {
+      title: "5 Precision Alterations That Instantly Elevate Any Outfit",
+      category: "Alteration Tips",
+      readTime: "• 4 min read • Published Oct 25, 2026",
+      authorName: "Matteo Rossi",
+      authorRole: "Senior Alterations Specialist",
+      authorAvatar: "assets/images/team/team-4.jpg",
+      heroImage: "assets/images/blog/blog-4.jpg",
+      lead: "How subtle adjustments to sleeve pitch, trouser break, and waist suppression can give off-the-rack garments an authentic bespoke posture.",
+      sections: [
+        {
+          heading: "1. Correcting Sleeve Length to Show 1/2 Inch Shirt Cuff",
+          content: "Jacket sleeves should end right above the wrist bone, allowing exactly 1/4 to 1/2 inch of crisp shirt cuff to emerge. This small detail visually balances arm proportions and frames luxury watches."
+        },
+        {
+          heading: "2. Precision Trouser Break Calibration",
+          content: "Whether you prefer a modern No-Break (clean crop over shoe top), slight break, or traditional medium break, tailored hem tapering prevents fabric pooling and elongates your leg silhouette."
+        },
+        {
+          heading: "3. Waist Suppression and Back Seam Tapering",
+          content: "Taking in the jacket side seams and back vent eliminates boxiness, accentuating a clean V-taper across the shoulder and waist without creating pull lines across the button stance."
+        }
+      ],
+      quote: "Fit is 90% of style. A $300 suit tailored with anatomical precision will always look more commanding than a $3,000 designer suit with poor sleeve pitch.",
+      authorBio: "Master alteration artisan trained in Milan. Specialist in vintage restoration, invisible mending, and leather tailoring."
+    },
+    'blouse-necklines': {
+      title: "Modern Saree Blouse Necklines: From Princess Cut to Sweetheart",
+      category: "Style & Trends",
+      readTime: "• 5 min read • Published Nov 02, 2026",
+      authorName: "Helena Vance",
+      authorRole: "Creative Director & Couturier",
+      authorAvatar: "assets/images/team/team-2.jpg",
+      heroImage: "assets/images/services/service-blouse.jpg",
+      lead: "Discover which necklines best compliment your shoulder width, torso length, and jewellery selection for festive couture ensembles.",
+      sections: [
+        {
+          heading: "The Classic Sweetheart Neckline",
+          content: "The sweetheart cut features a gentle heart dip that elongates the neck and flatters both petite and fuller bustlines. Pairs exquisitely with choker necklaces and heavy polki collar sets."
+        },
+        {
+          heading: "Princess Cut Panels vs Traditional Darting",
+          content: "Princess cut seams curve seamlessly from the armhole down to the waistline, providing smooth anatomical shaping without bulk. Padded inner cups eliminate the need for separate undergarments, ensuring sleek comfort."
+        },
+        {
+          heading: "Sheer Illusion Backs & Handcrafted Latkan Tassels",
+          content: "For cocktail sarees, sheer organza back panels with embroidered border trims and custom silk thread tassels add modern drama while keeping shoulders securely upright."
+        }
+      ],
+      quote: "A well-stitched designer blouse frames the saree like fine jewelry. Comfort, cup positioning, and seamless arm movement are the true marks of master tailoring.",
+      authorBio: "Couture designer specializing in modern Indian silhouettes, blouse drafting, and bridal embroidery."
+    },
+    'brocade-care': {
+      title: "Brocade & Zardozi Care: How to Prevent Thread Tarnish",
+      category: "Fabric Guide",
+      readTime: "• 6 min read • Published Nov 08, 2026",
+      authorName: "Arthur Vance",
+      authorRole: "Master Tailor & Conservator",
+      authorAvatar: "assets/images/team/team-1.jpg",
+      heroImage: "assets/images/fabrics/fabric-showcase.jpg",
+      lead: "Proven conservation practices for metallic gold threads, real silver zari borders, and pure Banarasi silk garments.",
+      sections: [
+        {
+          heading: "Wrap in Pure Unbleached Muslin (Mulmul)",
+          content: "Never store heirloom zari sarees or zardozi jackets in plastic covers. Plastic traps humidity and chemical gases that oxidize metallic threads. Wrap garments in breathable, unbleached white muslin cloth."
+        },
+        {
+          heading: "Refold Along Opposite Crease Lines Annually",
+          content: "Heavy metallic threads can weaken along permanent folds. Air out your brocades every six months on a shaded, dry day and re-crease them along alternate fold lines to prevent fiber fatigue."
+        },
+        {
+          heading: "Avoid Direct Perfume or Cedar Contact",
+          content: "Alcohol in perfumes and natural acids in raw cedar wood tarnish silver and copper core threads instantly. Apply fragrances before wearing garments, and place neem leaves or silica packets inside wardrobes instead."
+        }
+      ],
+      quote: "Real zari is jewelry in textile form. With proper archival care, handwoven Banarasi and Kanjeevaram weaves retain their luminous radiance for generations.",
+      authorBio: "Master Tailor with 30+ years experience in garment restoration, historic textiles, and bespoke tailoring."
+    }
+  };
+
+  function hydrateBlogDetailsPage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let blogId = urlParams.get('id') || urlParams.get('article');
+    
+    // Also check hash
+    if (!blogId && window.location.hash) {
+      const hashKey = window.location.hash.replace('#', '');
+      if (blogArticlesData[hashKey]) {
+        blogId = hashKey;
+      }
+    }
+
+    if (!blogId || !blogArticlesData[blogId]) return;
+
+    const data = blogArticlesData[blogId];
+
+    // Page Title & Meta
+    document.title = `${data.title} | Sartoria Royale Journal`;
+
+    // Category badge & Read Time
+    const badgeEl = document.getElementById('blogDetailCategory') || document.querySelector('.py-5.bg-sand .badge.badge-gold');
+    if (badgeEl) badgeEl.textContent = data.category;
+
+    const metaEl = document.getElementById('blogDetailMeta') || document.querySelector('.py-5.bg-sand .text-muted.small');
+    if (metaEl) metaEl.textContent = data.readTime;
+
+    // Main Title
+    const titleEl = document.getElementById('blogDetailTitle') || document.querySelector('h1.display-5');
+    if (titleEl) titleEl.textContent = data.title;
+
+    // Author Header
+    const authorImg = document.getElementById('blogDetailAuthorAvatar') || document.querySelector('.py-5.bg-sand img.rounded-circle');
+    if (authorImg) {
+      authorImg.src = data.authorAvatar;
+      authorImg.alt = data.authorName;
+    }
+
+    const authorNameEl = document.getElementById('blogDetailAuthorName') || document.querySelector('.py-5.bg-sand .fw-bold.text-heading');
+    if (authorNameEl) authorNameEl.textContent = data.authorName;
+
+    const authorRoleEl = document.getElementById('blogDetailAuthorRole') || document.querySelector('.py-5.bg-sand small.text-muted');
+    if (authorRoleEl) authorRoleEl.textContent = data.authorRole;
+
+    // Hero Image
+    const heroImg = document.getElementById('blogDetailHeroImg') || document.querySelector('article img.rounded-4');
+    if (heroImg) {
+      heroImg.src = data.heroImage;
+      heroImg.alt = data.title;
+    }
+
+    // Lead Paragraph
+    const leadEl = document.getElementById('blogDetailLead') || document.querySelector('article .fs-5.leading-relaxed');
+    if (leadEl) leadEl.textContent = data.lead;
+
+    // Dynamic Sections & Quote
+    const bodyContainer = document.getElementById('blogDetailSections');
+    if (bodyContainer) {
+      let sectionsHTML = '';
+      data.sections.forEach((sec, idx) => {
+        sectionsHTML += `
+          <h2 class="h3 text-heading mt-5 mb-3">${sec.heading}</h2>
+          <p class="text-muted leading-relaxed">${sec.content}</p>
+        `;
+        if (idx === 1 && data.quote) {
+          sectionsHTML += `
+            <blockquote class="p-4 my-4 bg-sand border-start border-4 border-warning rounded-3 fst-italic text-heading">
+              "${data.quote}"
+            </blockquote>
+          `;
+        }
+      });
+      bodyContainer.innerHTML = sectionsHTML;
+    }
+
+    // Author Bio Box
+    const bioNameEl = document.getElementById('blogDetailBioName') || document.querySelector('.card.bg-sand h5.h6');
+    if (bioNameEl) bioNameEl.textContent = `Written by ${data.authorName}`;
+
+    const bioDescEl = document.getElementById('blogDetailBioDesc') || document.querySelector('.card.bg-sand p.small.text-muted');
+    if (bioDescEl) bioDescEl.textContent = data.authorBio;
+
+    const bioImg = document.getElementById('blogDetailBioAvatar') || document.querySelector('.card.bg-sand img.rounded-circle');
+    if (bioImg) {
+      bioImg.src = data.authorAvatar;
+      bioImg.alt = data.authorName;
+    }
+  }
+
+  hydrateBlogDetailsPage();
+
+  /* --------------------------------------------------------------------------
      5. Fabric Filtering & Search
   -------------------------------------------------------------------------- */
   const fabricFilterBtns = document.querySelectorAll('.fabric-filter-btn');
