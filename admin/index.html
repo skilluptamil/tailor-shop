@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sartoria Royale - Atelier Management & Tailoring Admin Dashboard.">
+  <title>Atelier Dashboard | Sartoria Royale Admin</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/responsive.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-sand">
+
+  <!-- ================= ADMIN SIDEBAR ================= -->
+  <aside class="admin-sidebar d-flex flex-column">
+    <div class="p-4 border-bottom">
+      <a class="brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <div>
+          <span class="d-block" style="line-height: 1;">SARTORIA</span>
+          <small class="text-gold fw-semibold" style="font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;">Admin Studio</small>
+        </div>
+      </a>
+    </div>
+
+    <div class="py-3 flex-grow-1 overflow-y-auto">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link active" href="index.html">
+            <i class="bi bi-grid-fill"></i> Atelier Overview
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link" href="#appointmentsSection">
+            <i class="bi bi-calendar-check-fill"></i> Fittings & Bookings
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link" href="#ordersSection">
+            <i class="bi bi-bag-check-fill"></i> Active Orders (42)
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link" href="#customersSection">
+            <i class="bi bi-people-fill"></i> Client Measurements
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link" href="../fabrics.html">
+            <i class="bi bi-palette-fill"></i> Fabric Inventory
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link admin-nav-link" href="../alterations.html">
+            <i class="bi bi-scissors"></i> Alteration Queue
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="p-3 border-top">
+      <a href="../index.html" class="btn btn-outline-atelier rounded-pill w-100 btn-sm mb-2">
+        <i class="bi bi-arrow-left"></i> View Live Website
+      </a>
+      <a href="../login.html" class="btn btn-outline-danger rounded-pill w-100 btn-sm">
+        <i class="bi bi-box-arrow-right"></i> Log Out
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= ADMIN MAIN CONTENT ================= -->
+  <main class="admin-main">
+    <!-- Topbar -->
+    <header class="admin-header d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-3">
+        <button class="btn btn-icon-square" id="sidebarToggle" aria-label="Toggle Sidebar">
+          <i class="bi bi-list fs-4"></i>
+        </button>
+        <h1 class="h5 mb-0 fw-bold d-none d-sm-block">Atelier Master Dashboard</h1>
+      </div>
+
+      <div class="d-flex align-items-center gap-3">
+        <!-- RTL Switcher -->
+        <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL" aria-label="Toggle RTL">
+          <span class="rtl-text fw-bold">RTL</span>
+        </button>
+        <!-- Dark/Light Theme -->
+        <button class="btn btn-icon-square theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <!-- User Profile Dropdown -->
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center gap-2 text-decoration-none text-heading" data-bs-toggle="dropdown">
+            <img src="../assets/images/team/team-1.jpg" alt="Master Arthur" class="rounded-circle" style="width: 36px; height: 36px; object-fit: cover;">
+            <span class="fw-bold small d-none d-md-inline">Arthur Vance</span>
+            <i class="bi bi-chevron-down small text-muted"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-custom">
+            <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2 text-gold"></i> Profile & Rates</a></li>
+            <li><a class="dropdown-item" href="../documentation/index.html"><i class="bi bi-file-earmark-text me-2 text-gold"></i> Documentation</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" href="../login.html"><i class="bi bi-box-arrow-right me-2"></i> Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Body Container -->
+    <div class="p-4 p-md-5">
+      <!-- 4 Stat Metric Cards -->
+      <div class="row g-4 mb-5">
+        <div class="col-sm-6 col-xl-3">
+          <div class="stat-card">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="text-muted small fw-semibold">Monthly Revenue</span>
+              <span class="badge bg-success bg-opacity-10 text-success small">+18.4%</span>
+            </div>
+            <div class="stat-value">$52,800</div>
+            <div class="small text-muted"><i class="bi bi-graph-up text-success me-1"></i> +$8,200 vs last month</div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+          <div class="stat-card">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="text-muted small fw-semibold">Active Garments</span>
+              <span class="badge badge-gold small">In Progress</span>
+            </div>
+            <div class="stat-value">42</div>
+            <div class="small text-muted"><i class="bi bi-scissors text-gold me-1"></i> 18 on cutting table</div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+          <div class="stat-card">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="text-muted small fw-semibold">Fittings Today</span>
+              <span class="badge bg-primary bg-opacity-10 text-primary small">Scheduled</span>
+            </div>
+            <div class="stat-value">14</div>
+            <div class="small text-muted"><i class="bi bi-clock-fill text-gold me-1"></i> 4 Bridal, 6 Suits</div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3">
+          <div class="stat-card">
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <span class="text-muted small fw-semibold">Fabric Inventory</span>
+              <span class="badge bg-sand text-heading small">In-Stock</span>
+            </div>
+            <div class="stat-value">520+ m</div>
+            <div class="small text-muted"><i class="bi bi-patch-check-fill text-success me-1"></i> Italian Silks restocked</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="row g-4 mb-5">
+        <!-- Revenue Trend Line Chart -->
+        <div class="col-lg-8">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div>
+                <h5 class="h6 fw-bold mb-0">Annual Revenue Analytics</h5>
+                <small class="text-muted">Bespoke commissions & alterations volume</small>
+              </div>
+              <span class="badge badge-gold">2026 Fiscal Year</span>
+            </div>
+            <div style="height: 300px;">
+              <canvas id="revenueChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Breakdown Doughnut Chart -->
+        <div class="col-lg-4">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <div>
+                <h5 class="h6 fw-bold mb-0">Order Status Distribution</h5>
+                <small class="text-muted">Current pipeline workflow</small>
+              </div>
+            </div>
+            <div style="height: 300px;">
+              <canvas id="orderStatusChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Appointments Management Table -->
+      <div id="appointmentsSection" class="card bg-surface border-0 shadow-sm rounded-4 p-4 mb-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+          <div>
+            <h5 class="h6 fw-bold mb-0">Recent Measurement & Fitting Appointments</h5>
+            <small class="text-muted">Manage scheduled client consultations</small>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <select class="form-select form-select-custom form-select-sm" id="appointmentStatusFilter" style="width: auto;">
+              <option value="all">All Statuses</option>
+              <option value="Confirmed">Confirmed</option>
+              <option value="In Progress">In Progress</option>
+              <option value="Pending">Pending</option>
+            </select>
+            <button class="btn btn-sm btn-gold rounded-pill" data-bs-toggle="modal" data-bs-target="#newAppointmentModal">
+              <i class="bi bi-plus-circle me-1"></i> New Booking
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Client Name</th>
+                <th>Service Needed</th>
+                <th>Fitting Date & Slot</th>
+                <th>Assigned Tailor</th>
+                <th>Status</th>
+                <th class="text-end">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1 -->
+              <tr class="appointment-table-row" data-status="Confirmed">
+                <td>
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/images/testimonials/avatar-1.jpg" alt="Client" class="rounded-circle" style="width: 34px; height: 34px; object-fit: cover;">
+                    <div>
+                      <strong class="d-block text-heading">Eleanor Vance</strong>
+                      <small class="text-muted">eleanor@vance.com</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-gold">Bridal Gown Couture</span></td>
+                <td>Oct 24, 2026 • 11:30 AM</td>
+                <td>Arthur Vance</td>
+                <td><span class="badge bg-success bg-opacity-10 text-success">Confirmed</span></td>
+                <td class="text-end">
+                  <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#customerDetailModal">View Spec</button>
+                </td>
+              </tr>
+
+              <!-- Row 2 -->
+              <tr class="appointment-table-row" data-status="In Progress">
+                <td>
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/images/testimonials/avatar-2.jpg" alt="Client" class="rounded-circle" style="width: 34px; height: 34px; object-fit: cover;">
+                    <div>
+                      <strong class="d-block text-heading">Marcus Sterling</strong>
+                      <small class="text-muted">m.sterling@finance.uk</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-outline">Men's 3-Piece Suit</span></td>
+                <td>Oct 25, 2026 • 2:00 PM</td>
+                <td>Matteo Rossi</td>
+                <td><span class="badge bg-warning bg-opacity-10 text-warning">In Progress</span></td>
+                <td class="text-end">
+                  <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#customerDetailModal">View Spec</button>
+                </td>
+              </tr>
+
+              <!-- Row 3 -->
+              <tr class="appointment-table-row" data-status="Pending">
+                <td>
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="rounded-circle bg-sand d-flex align-items-center justify-content-center fw-bold text-gold" style="width: 34px; height: 34px;">SA</div>
+                    <div>
+                      <strong class="d-block text-heading">Sophia Al-Mansoor</strong>
+                      <small class="text-muted">sophia@couture.ae</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge badge-burgundy">Express Alterations</span></td>
+                <td>Oct 25, 2026 • 4:30 PM</td>
+                <td>Helena Vance</td>
+                <td><span class="badge bg-danger bg-opacity-10 text-danger">Pending</span></td>
+                <td class="text-end">
+                  <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#customerDetailModal">View Spec</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Customers & Measurement Archival -->
+      <div id="customersSection" class="card bg-surface border-0 shadow-sm rounded-4 p-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+          <div>
+            <h5 class="h6 fw-bold mb-0">Client Measurement Archives</h5>
+            <small class="text-muted">Saved 30-point anatomical measurement profiles</small>
+          </div>
+          <div class="input-group" style="max-width: 280px;">
+            <span class="input-group-text bg-sand"><i class="bi bi-search text-gold"></i></span>
+            <input type="text" id="customerSearchInput" class="form-control form-control-custom form-control-sm" placeholder="Search client name...">
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th>Client Profile</th>
+                <th>Phone</th>
+                <th>Chest / Bust</th>
+                <th>Waist</th>
+                <th>Shoulder Pitch</th>
+                <th>Total Outfits</th>
+                <th class="text-end">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="customer-table-row">
+                <td><strong>Eleanor Vance</strong></td>
+                <td>+1 (555) 392-1084</td>
+                <td>36.5 in</td>
+                <td>28.0 in</td>
+                <td>Regular 15.5 in</td>
+                <td><span class="badge bg-sand text-heading">4 Garments</span></td>
+                <td class="text-end">
+                  <button class="btn btn-sm btn-link text-gold fw-bold text-decoration-none" data-bs-toggle="modal" data-bs-target="#customerDetailModal">Full Profile</button>
+                </td>
+              </tr>
+              <tr class="customer-table-row">
+                <td><strong>Marcus Sterling</strong></td>
+                <td>+44 20 7946 0192</td>
+                <td>42.0 in</td>
+                <td>34.5 in</td>
+                <td>Square 18.2 in</td>
+                <td><span class="badge bg-sand text-heading">7 Garments</span></td>
+                <td class="text-end">
+                  <button class="btn btn-sm btn-link text-gold fw-bold text-decoration-none" data-bs-toggle="modal" data-bs-target="#customerDetailModal">Full Profile</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Client Measurement Modal -->
+  <div class="modal fade" id="customerDetailModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-bottom pb-3">
+          <div>
+            <h4 class="modal-title h5 mb-1">Eleanor Vance – Anatomical Specs</h4>
+            <span class="badge badge-gold">VIP Bridal Commission</span>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-4">
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Bust / Chest</small>
+                <strong class="fs-5 text-heading">36.5 inches</strong>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Natural Waist</small>
+                <strong class="fs-5 text-heading">28.0 inches</strong>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Hip Circumference</small>
+                <strong class="fs-5 text-heading">39.2 inches</strong>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Shoulder Width</small>
+                <strong class="fs-5 text-heading">15.5 inches</strong>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Sleeve Length</small>
+                <strong class="fs-5 text-heading">23.8 inches</strong>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-sand rounded-3">
+                <small class="text-muted d-block">Posture / Shoulder Slope</small>
+                <strong class="fs-5 text-heading">Erect / Normal</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-atelier rounded-pill" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-gold rounded-pill"><i class="bi bi-printer me-1"></i> Print Cutting Pattern</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
+  <script src="../assets/js/rtl.js"></script>
+  <script src="../assets/js/dashboard.js"></script>
+</body>
+</html>

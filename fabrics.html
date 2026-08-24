@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Sartoria Royale's luxury fabric collection. Pure Mulberry silks, Irish linens, Egyptian Giza cottons, and Italian Merino wools.">
+  <title>Luxury Fabric Sourcing & Swatches | Sartoria Royale</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-atelier">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <span style="line-height: 1;">SARTORIA</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-sm btn-outline-atelier rounded-pill rtl-toggle-btn px-2 py-1" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span class="rtl-text small fw-bold">RTL</span>
+        </button>
+        <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFabrics" aria-controls="navbarFabrics" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarFabrics">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
+              <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span class="rtl-text fw-bold">RTL</span>
+          </button>
+          <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section class="py-5 bg-sand text-center">
+    <div class="container">
+      <div class="section-tag"><i class="bi bi-palette"></i> Tactile Excellence</div>
+      <h1 class="section-title mb-2">Heritage Fabrics & Luxury Textiles</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Fabrics</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Fabrics Library -->
+  <section class="section-padding">
+    <div class="container">
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group mb-5">
+        <button class="filter-btn fabric-filter-btn active" data-filter="all">All Fabrics</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="silk">Mulberry Silk</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="linen">Irish Linen</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="wool">Merino Wool</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="cotton">Egyptian Cotton</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="velvet">Velvet & Brocade</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Fabric 1 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="silk">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-silk.jpg" alt="Italian Mulberry Silk Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Pure Silk</span>
+              <span class="small text-muted">Weight: 140 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Italian 35 Momme Mulberry Silk</h4>
+            <p class="text-muted small mb-3">Hypoallergenic natural filament silk with buttery softness, fluid drape, and natural lustrous sheen. Ideal for bridal blouses, saree borders, and gala evening gowns.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $65 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 2 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="linen">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-linen.jpg" alt="Pure Irish Flax Linen" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Flax Linen</span>
+              <span class="small text-muted">Weight: 220 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Pure Irish Flax Linen</h4>
+            <p class="text-muted small mb-3">Naturally textured, moisture-wicking and exceptionally crisp. Softens with every wash. Perfect for tailored resort shirts, summer blazers, and lightweight trousers.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $45 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 3 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="wool">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-wool.jpg" alt="Super 150s Merino Wool" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Worsted Wool</span>
+              <span class="small text-muted">Weight: 280 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Super 150s Australian Merino Wool</h4>
+            <p class="text-muted small mb-3">Spun from ultra-fine 16-micron fibers for supreme wrinkle-recovery, breathability, and natural four-season temperature control. The gold standard for bespoke suits.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $95 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 4 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="cotton">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-cotton.jpg" alt="Egyptian Giza Cotton" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Long Staple Cotton</span>
+              <span class="small text-muted">Weight: 120 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Egyptian Giza 88 Extra-Long Staple</h4>
+            <p class="text-muted small mb-3">Handpicked along the Nile Delta, offering silky smoothness and extraordinary durability. Tailored into luxurious dress shirts, kurtas, and salwar linings.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $35 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 5 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="velvet">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-velvet.jpg" alt="Royal Micro Velvet" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Micro Velvet</span>
+              <span class="small text-muted">Weight: 340 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Royal Micro Plush Velvet</h4>
+            <p class="text-muted small mb-3">Dense, light-absorbing pile with rich depth of color and supreme softness. Used for designer blouse backdrops, evening jackets, and royal sherwanis.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $55 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 6 -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="velvet">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-brocade.jpg" alt="Heritage Banarasi Brocade" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-burgundy">Handloom Jacquard</span>
+              <span class="small text-muted">Weight: 310 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Heritage Banarasi Gold Brocade</h4>
+            <p class="text-muted small mb-3">Authentic handloom zari weaving featuring floral kadwa patterns and real metallic threads. Unsurpassed magnificence for bridal lehengas and festive dupattas.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $120 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fabric Care Guide Section -->
+      <div class="card bg-sand border-0 rounded-4 p-4 p-md-5 mt-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge badge-gold mb-2">Fabric Preservation</span>
+            <h3 class="h3 mb-3">Caring for Bespoke Natural Textiles</h3>
+            <p class="text-muted mb-0">
+              Natural fibers like pure silk, cashmere, and wool need proper care. Always hang suits on contoured cedar hangers, steam silk gently, and dry clean with eco-friendly solvents to preserve fabric tensile strength for decades.
+            </p>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+              <i class="bi bi-calendar-check"></i> Book Studio Sourcing Session
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-atelier">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+            <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+            <span class="text-white" style="line-height: 1;">SARTORIA</span>
+          </a>
+          <p class="small text-muted mb-4">
+            Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="alterations.html">Alterations</a></li>
+            <li><a href="fabrics.html">Fabric Showcase</a></li>
+            <li><a href="turnaround-times.html">Turnaround Times</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-services-col">
+          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
+            <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
+            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
+            <li><a href="services.html#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="services.html#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
+            <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading mb-3">Newsletter</h5>
+          <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <div class="mt-3 text-muted small">
+            <i class="bi bi-shield-check text-gold"></i> We respect your privacy. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="documentation/index.html">Documentation</a>
+          <a href="admin/index.html">Admin Dashboard</a>
+          <a href="404.html">404 Demo</a>
+          <a href="coming-soon.html">Coming Soon</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swatch Request Modal -->
+  <div class="modal fade" id="swatchModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title">Request Fabric Swatch Pack</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" novalidate>
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Full Name</label>
+              <input type="text" class="form-control form-control-custom" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Shipping Address</label>
+              <textarea class="form-control form-control-custom" rows="2" placeholder="Street, City, Zip" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label class="form-label form-label-custom">Preferred Fabric Types</label>
+              <input type="text" class="form-control form-control-custom" placeholder="e.g. Mulberry Silk & Merino Wool" required>
+            </div>
+            <button type="submit" class="btn-custom btn-gold btn-custom-pill w-100">Send Me Swatches</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title h5">Schedule Fabric Sourcing Session</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Name *</label>
+                <input type="text" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Phone *</label>
+                <input type="tel" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-12 text-end pt-2">
+                <button type="submit" class="btn-custom btn-gold btn-custom-pill">Confirm Sourcing Appointment</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

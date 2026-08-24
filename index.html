@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sartoria Royale - Premier Bespoke Tailoring & Haute Couture Studio. Handcrafted suits, bridal lehengas, custom dresses, and precision alterations.">
+  <meta name="keywords" content="tailoring, custom stitching, bespoke suits, bridal lehenga, dressmaker, alterations, fabrics">
+  <meta property="og:title" content="Sartoria Royale | Bespoke Tailoring & Couture Studio">
+  <meta property="og:description" content="Perfect Fit. Beautifully Stitched. Experience master craftsmanship and bespoke dressmaking.">
+  <meta property="og:type" content="website">
+  <title>Sartoria Royale | Luxury Bespoke Tailoring & Custom Stitching Studio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-atelier">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <span style="line-height: 1;">SARTORIA</span>
+      </a>
+
+      <!-- Mobile Controls & Hamburger -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-sm btn-outline-atelier rounded-pill rtl-toggle-btn px-2 py-1" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span class="rtl-text small fw-bold">RTL</span>
+        </button>
+        <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home <i class="bi bi-chevron-down dropdown-chevron"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item active" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
+              <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="contact.html">Contact</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <!-- RTL / LTR Switcher Button -->
+          <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span class="rtl-text fw-bold">RTL</span>
+          </button>
+          <!-- Dark / Light Theme Switcher Button -->
+          <button class="btn btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <!-- Book Appointment CTA -->
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION 1 ================= -->
+  <header class="hero-section-1">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-tag">
+            <i class="bi bi-award"></i> Master Haute Couture & Tailoring
+          </div>
+          <h1 class="display-4 fw-bold mb-3" style="line-height: 1.15;">
+            Perfect Fit <br><span class="text-gold font-editorial fst-italic">Beautifully Stitched</span>
+          </h1>
+          <p class="section-desc mb-4">
+            Professional bespoke tailoring and custom dress stitching crafted to match your exact silhouette, lifestyle, and individual personality with hand-finished Italian craftsmanship.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <button class="btn-custom btn-gold btn-custom-pill shadow-sm" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+              <i class="bi bi-calendar-plus"></i> Book An Appointment
+            </button>
+            <a href="services.html" class="btn-custom btn-outline-atelier btn-custom-pill">
+              Explore Services <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-3 pt-2">
+            <div class="d-flex">
+              <img src="assets/images/testimonials/avatar-1.jpg" alt="Client" class="rounded-circle border border-2 border-white" style="width: 42px; height: 42px; object-fit: cover;">
+              <img src="assets/images/testimonials/avatar-2.jpg" alt="Client" class="rounded-circle border border-2 border-white ms-n2" style="width: 42px; height: 42px; object-fit: cover; margin-left: -12px;">
+            </div>
+            <div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <small class="text-muted fw-semibold">Over 1,500+ Five-Star Client Reviews</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="hero-visual-wrapper">
+            <img src="assets/images/hero/hero-1.jpg" alt="Master Tailor in Atelier" class="hero-main-img shadow-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= TRUST COUNTER STRIP ================= -->
+  <section class="counter-bar">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-md-3">
+          <div class="counter-item">
+            <div class="counter-number">15+</div>
+            <div class="counter-label">Years Experience</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-item">
+            <div class="counter-number">8,500+</div>
+            <div class="counter-label">Dresses Stitched</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-item">
+            <div class="counter-number">3,200+</div>
+            <div class="counter-label">Happy Clients</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="counter-item">
+            <div class="counter-number">99.4%</div>
+            <div class="counter-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES PREVIEW ================= -->
+  <section class="section-padding bg-sand">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-tag"><i class="bi bi-scissors"></i> Bespoke Tailoring Services</div>
+        <h2 class="section-title">Masterful Stitching For Every Occasion</h2>
+        <p class="section-desc mx-auto">From bridal couture to bespoke gentleman suits, each stitch reflects precision, passion, and timeless elegance.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Service 1: Bridal Wear -->
+        <div class="col-md-6 col-lg-3" id="service-bridal">
+          <div class="card-atelier">
+            <div class="card-img-top-wrapper">
+              <img src="assets/images/services/service-bridal.jpg" alt="Bridal Wear Tailoring" loading="lazy">
+            </div>
+            <div class="service-icon-box"><i class="bi bi-gem"></i></div>
+            <h4 class="h5 mb-2">Bridal Wear Couture</h4>
+            <p class="text-muted small mb-3">Custom bridal gowns, ornate lehengas, and hand-embroidered wedding trousseaus.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="fw-bold text-gold">From $199</span>
+              <a href="service-details.html?service=bridal" class="btn btn-sm btn-outline-atelier rounded-pill">Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Men's Bespoke Suits -->
+        <div class="col-md-6 col-lg-3" id="service-suits">
+          <div class="card-atelier">
+            <div class="card-img-top-wrapper">
+              <img src="assets/images/services/service-suit.jpg" alt="Men's Bespoke Suits" loading="lazy">
+            </div>
+            <div class="service-icon-box"><i class="bi bi-person-badge"></i></div>
+            <h4 class="h5 mb-2">Men's Bespoke Suits</h4>
+            <p class="text-muted small mb-3">Handcrafted 2-piece and 3-piece suits, tuxedos, and tailored wool trousers.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="fw-bold text-gold">From $249</span>
+              <a href="service-details.html?service=suits" class="btn btn-sm btn-outline-atelier rounded-pill">Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Designer Blouse Stitching -->
+        <div class="col-md-6 col-lg-3" id="service-blouse">
+          <div class="card-atelier">
+            <div class="card-img-top-wrapper">
+              <img src="assets/images/services/service-blouse.jpg" alt="Blouse Stitching" loading="lazy">
+            </div>
+            <div class="service-icon-box"><i class="bi bi-flower1"></i></div>
+            <h4 class="h5 mb-2">Designer Blouse Stitching</h4>
+            <p class="text-muted small mb-3">Princess cut, boat neck, padded blouses with intricate gold zardozi and piping.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="fw-bold text-gold">From $49</span>
+              <a href="service-details.html?service=blouse" class="btn btn-sm btn-outline-atelier rounded-pill">Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Custom Dress & Gown -->
+        <div class="col-md-6 col-lg-3" id="service-dresses">
+          <div class="card-atelier">
+            <div class="card-img-top-wrapper">
+              <img src="assets/images/services/service-dress.jpg" alt="Custom Dress Stitching" loading="lazy">
+            </div>
+            <div class="service-icon-box"><i class="bi bi-stars"></i></div>
+            <h4 class="h5 mb-2">Custom Dress & Gowns</h4>
+            <p class="text-muted small mb-3">Bespoke evening gowns, cocktail silhouettes, and drape styling crafted to order.</p>
+            <div class="mt-auto d-flex align-items-center justify-content-between">
+              <span class="fw-bold text-gold">From $119</span>
+              <a href="service-details.html?service=dresses" class="btn btn-sm btn-outline-atelier rounded-pill">Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="services.html" class="btn-custom btn-primary-atelier btn-custom-pill">
+          View All 12+ Tailoring Services <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT STUDIO ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="position-relative pe-lg-4">
+            <img src="assets/images/team/team-1.jpg" alt="Master Tailor at Work" class="rounded-4 shadow-lg border border-1 w-100" style="aspect-ratio: 4/3; object-fit: cover;">
+            <div class="position-absolute bottom-0 start-0 translate-middle-y bg-surface p-4 rounded-4 shadow-lg border border-1 d-none d-md-block" style="max-width: 260px; margin-left: 20px;">
+              <div class="text-gold fs-3 mb-1"><i class="bi bi-award-fill"></i></div>
+              <h5 class="mb-1 h6">Certified Master Artisans</h5>
+              <p class="text-muted small mb-0">Over 30+ precision measurement points on every garment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="section-tag"><i class="bi bi-compass"></i> The Sartoria Royale Heritage</div>
+          <h2 class="section-title">Where Tradition Meets Contemporary Silhouette</h2>
+          <p class="text-muted">
+            Founded with a passion for sartorial excellence, Sartoria Royale brings decades of artisanal tailoring heritage to the modern wardrobe. Every garment is drafted from scratch according to your unique posture and anatomy.
+          </p>
+          <div class="row g-3 my-3">
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold">Bespoke Pattern Drafting</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold">Pure Silk & Wool Linings</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold">Personal Styling Session</span>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold">Free Post-Fit Alterations</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-3">
+            <a href="about.html" class="btn-custom btn-primary-atelier btn-custom-pill">
+              Read Our Studio Story <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 4-STEP STITCHING PROCESS ================= -->
+  <section class="section-padding bg-sand">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-tag"><i class="bi bi-diagram-3"></i> Seamless Experience</div>
+        <h2 class="section-title">Our 4-Step Bespoke Stitching Process</h2>
+        <p class="section-desc mx-auto">From initial sketch to your final flawless fitting, our streamlined process ensures luxury convenience.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step-card">
+            <div class="step-number-badge">01</div>
+            <h4 class="h5 mb-2">Book Appointment</h4>
+            <p class="text-muted small mb-0">Select your preferred date and time online or visit our atelier for a private one-on-one consultation.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step-card">
+            <div class="step-number-badge">02</div>
+            <h4 class="h5 mb-2">Take Measurements</h4>
+            <p class="text-muted small mb-0">Our master tailor records 30+ precision anatomical measurements and posture dynamics.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step-card">
+            <div class="step-number-badge">03</div>
+            <h4 class="h5 mb-2">Choose Fabric & Design</h4>
+            <p class="text-muted small mb-0">Browse our swatch library of 500+ luxury Italian silks, linens, and velvets or bring your own fabric.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="process-step-card">
+            <div class="step-number-badge">04</div>
+            <h4 class="h5 mb-2">Stitch & Deliver</h4>
+            <p class="text-muted small mb-0">Garments are meticulously cut, hand-sewn, pressed, and delivered on-schedule with a fit guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED WORK / PORTFOLIO ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-4">
+        <div class="section-tag"><i class="bi bi-camera"></i> Atelier Lookbook</div>
+        <h2 class="section-title">Our Featured Tailoring Creations</h2>
+        <p class="section-desc mx-auto">Explore handpicked bespoke commissions crafted for galas, weddings, executive boardrooms, and everyday luxury.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-btn-group">
+        <button class="filter-btn portfolio-filter-btn active" data-filter="all">All Outfits</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="women">Women's Couture</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="men">Men's Bespoke</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="bridal">Bridal Suite</button>
+        <button class="filter-btn portfolio-filter-btn" data-filter="alterations">Alterations</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="row g-4 portfolio-grid">
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="bridal">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-1.jpg" alt="Royal Gold Zardozi Bridal Lehenga" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Bridal Couture</span>
+              <h4 class="text-white h5 mb-1">Golden Embroidered Bridal Lehenga</h4>
+              <p class="text-light small mb-0">Handcrafted with pure silk zardozi and antique lace.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="men">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-2.jpg" alt="Charcoal 3-Piece Wool Bespoke Suit" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Men's Tailoring</span>
+              <h4 class="text-white h5 mb-1">Savile Charcoal 3-Piece Suit</h4>
+              <p class="text-light small mb-0">Super 150s Merino wool with peak lapel detailing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="women">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-3.jpg" alt="Emerald Green Satin Evening Gown" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Women's Gowns</span>
+              <h4 class="text-white h5 mb-1">Emerald Drape Evening Gown</h4>
+              <p class="text-light small mb-0">Heavy silk satin with off-shoulder gold applique.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="women">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-4.jpg" alt="Velvet Designer Blouse" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Blouse Stitching</span>
+              <h4 class="text-white h5 mb-1">Royal Velvet Embroidered Blouse</h4>
+              <p class="text-light small mb-0">Intricate cutwork back design with handmade tassels.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="alterations">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-5.jpg" alt="Precision Alterations Fitting" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Alterations</span>
+              <h4 class="text-white h5 mb-1">Couture Resizing & Waist Adjustment</h4>
+              <p class="text-light small mb-0">Invisible seam reduction and lining restoration.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 portfolio-grid-item" data-category="women">
+          <div class="portfolio-item">
+            <img src="assets/images/portfolio/portfolio-6.jpg" alt="Midnight Velvet Evening Silhouette" class="portfolio-img" loading="lazy">
+            <div class="portfolio-overlay">
+              <span class="badge badge-gold mb-2 align-self-start">Boutique Edition</span>
+              <h4 class="text-white h5 mb-1">Midnight Sapphire Velvet Dress</h4>
+              <p class="text-light small mb-0">Custom corsetry and pleated silhouette.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FABRICS SHOWCASE BANNER ================= -->
+  <section class="section-padding bg-sand">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="section-tag"><i class="bi bi-patch-check"></i> Sourced From World Capitals</div>
+          <h2 class="section-title">Over 500+ Handpicked Luxury Fabrics</h2>
+          <p class="text-muted mb-4">
+            We partner directly with heritage mills in Como Italy, Lyon France, and Varanasi to source the finest pure Mulberry silks, Scottish cashmeres, Irish linens, and organic Egyptian cottons.
+          </p>
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <span class="badge badge-outline">Mulberry Silk</span>
+            <span class="badge badge-outline">Irish Linen</span>
+            <span class="badge badge-outline">Egyptian Giza Cotton</span>
+            <span class="badge badge-outline">Royal Micro Velvet</span>
+            <span class="badge badge-outline">French Brocade</span>
+            <span class="badge badge-outline">Pure Chiffon</span>
+          </div>
+          <a href="fabrics.html" class="btn-custom btn-primary-atelier btn-custom-pill">
+            Explore Fabric Library <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/fabrics/fabric-showcase.jpg" alt="Luxury Fabric Swatches" class="rounded-4 shadow-lg border border-1 w-100" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-tag"><i class="bi bi-chat-quote"></i> Client Testimonials</div>
+        <h2 class="section-title">Words From Our Discerning Clients</h2>
+        <p class="section-desc mx-auto">Read what our clients say about their bespoke fittings, bridal journeys, and custom alteration results.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="star-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"Sartoria Royale crafted my dream wedding lehenga. The fit on the first trial was 100% flawless! The intricate gold zardozi embroidery was truly majestic."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/avatar-1.jpg" alt="Eleanor Vance" class="testimonial-avatar">
+              <div>
+                <h5 class="h6 mb-0 text-heading">Eleanor Vance</h5>
+                <small class="text-muted">Bridal Client, New York</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="star-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"Finding a tailor who understands both classic Savile Row cuts and modern silhouette is rare. The three-piece suit they made for me fits like a second skin."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/avatar-2.jpg" alt="Marcus Sterling" class="testimonial-avatar">
+              <div>
+                <h5 class="h6 mb-0 text-heading">Marcus Sterling</h5>
+                <small class="text-muted">Executive Director, London</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <div class="star-rating mb-3">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="text-muted mb-4">"Their 24-hour alteration service saved my gala event! They reshaped the shoulders and hemmed the silk gown with invisible precision. Highly recommended."</p>
+            <div class="d-flex align-items-center gap-3">
+              <img src="assets/images/testimonials/avatar-3.jpg" alt="Sophia Al-Mansoor" class="testimonial-avatar">
+              <div>
+                <h5 class="h6 mb-0 text-heading">Sophia Al-Mansoor</h5>
+                <small class="text-muted">Fashion Stylist, Dubai</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA BANNER ================= -->
+  <section class="section-padding bg-dark-atelier position-relative overflow-hidden">
+    <div class="container position-relative z-1 text-center max-w-700 mx-auto">
+      <span class="badge badge-gold mb-3">Experience Couture Craft</span>
+      <h2 class="text-white display-5 fw-bold mb-3">Ready for a Flawless, Custom Fit?</h2>
+      <p class="text-light opacity-75 mb-4 fs-5">
+        Book your private measurement consultation today or bring your favorite fabrics to our studio.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <button class="btn-custom btn-gold btn-custom-pill shadow-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+          <i class="bi bi-calendar-check"></i> Book Measurement Appointment
+        </button>
+        <a href="contact.html" class="btn-custom btn-outline-gold btn-custom-pill">
+          <i class="bi bi-chat-dots"></i> Contact Studio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-atelier">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+            <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+            <span class="text-white" style="line-height: 1;">SARTORIA</span>
+          </a>
+          <p class="small text-muted mb-4">
+            Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="alterations.html">Alterations</a></li>
+            <li><a href="fabrics.html">Fabric Showcase</a></li>
+            <li><a href="turnaround-times.html">Turnaround Times</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-services-col">
+          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
+            <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
+            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
+            <li><a href="services.html#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="services.html#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
+            <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading mb-3">Newsletter</h5>
+          <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <div class="mt-3 text-muted small">
+            <i class="bi bi-shield-check text-gold"></i> We respect your privacy. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="documentation/index.html">Documentation</a>
+          <a href="admin/index.html">Admin Dashboard</a>
+          <a href="404.html">404 Demo</a>
+          <a href="coming-soon.html">Coming Soon</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SEARCH MODAL ================= -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4">
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title" id="searchModalLabel">Search Sartoria Royale</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form action="services.html" method="get">
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-sand border-end-0"><i class="bi bi-search text-gold"></i></span>
+              <input type="search" class="form-control form-control-custom border-start-0" placeholder="Search services, fabrics, alterations..." required>
+              <button class="btn btn-gold" type="submit">Search</button>
+            </div>
+          </form>
+          <div class="small text-muted">
+            <span class="fw-semibold">Popular:</span> 
+            <a href="services.html" class="badge badge-soft text-decoration-none me-1">Bridal</a>
+            <a href="services.html" class="badge badge-soft text-decoration-none me-1">Suits</a>
+            <a href="alterations.html" class="badge badge-soft text-decoration-none me-1">Alterations</a>
+            <a href="fabrics.html" class="badge badge-soft text-decoration-none">Silk Fabric</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= APPOINTMENT MODAL ================= -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4">
+        <div class="modal-header border-bottom p-4">
+          <div>
+            <h4 class="modal-title h5 mb-1" id="appointmentModalLabel">Book a Tailoring Appointment</h4>
+            <p class="text-muted small mb-0">Schedule a measurement session or private couture styling.</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="appName" class="form-label form-label-custom">Full Name *</label>
+                <input type="text" class="form-control form-control-custom" id="appName" placeholder="e.g. Eleanor Vance" required>
+              </div>
+              <div class="col-md-6">
+                <label for="appPhone" class="form-label form-label-custom">Phone Number *</label>
+                <input type="tel" class="form-control form-control-custom" id="appPhone" placeholder="+1 (555) 000-0000" required>
+              </div>
+              <div class="col-md-6">
+                <label for="appEmail" class="form-label form-label-custom">Email Address *</label>
+                <input type="email" class="form-control form-control-custom" id="appEmail" placeholder="name@example.com" required>
+              </div>
+              <div class="col-md-6">
+                <label for="appointmentService" class="form-label form-label-custom">Service Needed *</label>
+                <select class="form-select form-select-custom" id="appointmentService" required>
+                  <option value="" selected disabled>Select a service...</option>
+                  <option value="Bridal Wear">Bridal Wear Couture</option>
+                  <option value="Men's Bespoke Suit">Men's Bespoke Suit</option>
+                  <option value="Designer Blouse">Designer Blouse Stitching</option>
+                  <option value="Salwar Suit / Kurta">Salwar Suit / Kurta</option>
+                  <option value="Custom Dress / Gown">Custom Dress / Gown</option>
+                  <option value="Alterations & Resizing">Alterations & Resizing</option>
+                  <option value="Fabric Sourcing">Fabric Sourcing Consultation</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="appDate" class="form-label form-label-custom">Preferred Date *</label>
+                <input type="date" class="form-control form-control-custom" id="appDate" required>
+              </div>
+              <div class="col-md-6">
+                <label for="appTime" class="form-label form-label-custom">Preferred Time Slot *</label>
+                <select class="form-select form-select-custom" id="appTime" required>
+                  <option value="" selected disabled>Choose time slot...</option>
+                  <option value="Morning">Morning (10:00 AM - 1:00 PM)</option>
+                  <option value="Afternoon">Afternoon (1:00 PM - 4:30 PM)</option>
+                  <option value="Evening">Evening (4:30 PM - 7:30 PM)</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="appNotes" class="form-label form-label-custom">Special Requirements / Notes</label>
+                <textarea class="form-control form-control-custom" id="appNotes" rows="3" placeholder="Tell us about your fabric, reference design, or specific occasion date..."></textarea>
+              </div>
+              <div class="col-12 text-end pt-2">
+                <button type="button" class="btn btn-outline-atelier rounded-pill me-2" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn-custom btn-gold btn-custom-pill">
+                  <i class="bi bi-calendar-check"></i> Confirm Appointment
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

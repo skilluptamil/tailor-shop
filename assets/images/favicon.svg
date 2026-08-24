@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sartoriaBrandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C5A880"/>
+      <stop offset="100%" stop-color="#6B2438"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded Brand Squircle -->
+  <rect x="24" y="24" width="464" height="464" rx="104" ry="104" fill="url(#sartoriaBrandGrad)"/>
+  <!-- Centered Bootstrap Scissors Icon -->
+  <g transform="translate(80, 80) scale(22)" fill="#FFFFFF">
+    <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 1.555a2.5 2.5 0 1 1-.707.708L8.107 9.318 6.555 10.87a2.5 2.5 0 1 1-.708-.707l1.553-1.554L3.5 3.5zm6.578 4.416 2.559-4.429a.5.5 0 0 0-.256-.684.5.5 0 0 0-.685.256L9.366 7.472l.712.444zm-4.156 0 .712-.444L4.282 3.059a.5.5 0 0 0-.685-.256.5.5 0 0 0-.256.684l2.559 4.429zM5.5 13a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+  </g>
+</svg>

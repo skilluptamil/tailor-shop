@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sartoria Royale - Official Template Documentation & Customization Guide.">
+  <title>Documentation | Sartoria Royale - Tailoring & Fashion Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="../favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    :root {
+      --doc-primary: #171513;
+      --doc-gold: #C5A880;
+      --doc-bg: #FDFBF7;
+      --doc-surface: #FFFFFF;
+      --doc-border: #E8E2D9;
+      --doc-code-bg: #1B1815;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--doc-bg);
+      color: #333333;
+      line-height: 1.65;
+    }
+    .doc-sidebar {
+      position: sticky;
+      top: 2rem;
+      height: calc(100vh - 4rem);
+      overflow-y: auto;
+    }
+    .doc-nav-link {
+      color: #555;
+      padding: 0.45rem 0.75rem;
+      border-radius: 6px;
+      display: block;
+      text-decoration: none;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .doc-nav-link:hover, .doc-nav-link.active {
+      color: #171513;
+      background-color: #EDE7DC;
+      font-weight: 600;
+    }
+    .doc-card {
+      background: var(--doc-surface);
+      border: 1px solid var(--doc-border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    }
+    pre {
+      background-color: var(--doc-code-bg);
+      color: #F8F9FA;
+      padding: 1.25rem;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.875rem;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'JetBrains Mono', monospace;
+      color: #A3703E;
+      background: #F4EFE6;
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.875em;
+    }
+    pre code {
+      color: #F8F9FA;
+      background: transparent;
+      padding: 0;
+    }
+    .badge-gold {
+      background-color: #C5A880;
+      color: #171513;
+      font-weight: 600;
+    }
+    @media (max-width: 991.98px) {
+      .doc-sidebar {
+        position: static;
+        height: auto;
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body class="py-5">
+
+  <div class="container">
+    <!-- Header -->
+    <div class="doc-card text-center mb-4">
+      <div class="badge badge-gold mb-2">Marketplace Edition v1.0.0</div>
+      <h1 class="display-6 fw-bold mb-2">Sartoria Royale – Documentation</h1>
+      <p class="text-muted mb-3">Premium Tailoring & Dress Stitching Studio HTML5 Template</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="../index.html" class="btn btn-dark btn-sm rounded-pill"><i class="bi bi-box-arrow-left"></i> Live Preview 1</a>
+        <a href="../index-2.html" class="btn btn-outline-dark btn-sm rounded-pill"><i class="bi bi-stars"></i> Live Preview 2</a>
+        <a href="../admin/index.html" class="btn btn-outline-dark btn-sm rounded-pill"><i class="bi bi-grid-fill"></i> Admin Dashboard</a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Navigation Sidebar -->
+      <div class="col-lg-3">
+        <div class="doc-sidebar">
+          <h6 class="text-uppercase fw-bold small text-muted mb-3">Documentation Sitemap</h6>
+          <nav class="nav flex-column gap-1">
+            <a class="doc-nav-link" href="#overview">1. Overview & Features</a>
+            <a class="doc-nav-link" href="#structure">2. Folder Structure</a>
+            <a class="doc-nav-link" href="#colors">3. Color Customization (CSS)</a>
+            <a class="doc-nav-link" href="#typography">4. Typography Setup</a>
+            <a class="doc-nav-link" href="#darkmode">5. Dark Mode & RTL Support</a>
+            <a class="doc-nav-link" href="#forms">6. Forms & Toast Alerts</a>
+            <a class="doc-nav-link" href="#dashboard">7. Admin Dashboard & Charts</a>
+            <a class="doc-nav-link" href="#credits">8. Sources & Credits</a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Content Area -->
+      <div class="col-lg-9">
+        <!-- 1. Overview -->
+        <section id="overview" class="doc-card">
+          <h3 class="fw-bold mb-3">1. Template Overview & Key Features</h3>
+          <p>
+            <strong>Sartoria Royale</strong> is a luxury, responsive HTML5 template crafted for tailoring shops, fashion boutiques, bespoke ateliers, and alteration salons. Built on modern CSS variables, Bootstrap 5 grid, and modular vanilla JavaScript with <strong>zero build steps required</strong>.
+          </p>
+          <ul class="mb-0">
+            <li>2 Distinct High-Converting Homepages (Classic Tailoring + Haute Couture Boutique)</li>
+            <li>Complete Suite of 12+ Tailoring & Alteration Pages</li>
+            <li>Native Dark / Light Theme switcher with <code>localStorage</code> memory</li>
+            <li>Complete RTL (Right-to-Left) Language stylesheet for Arabic & Hebrew</li>
+            <li>Interactive Live Filtering for Services, Portfolio, Fabrics, and Blog</li>
+            <li>Interactive Admin Dashboard with Chart.js analytics & Measurement archives</li>
+            <li>Fully responsive and mobile optimized (320px to 4K displays)</li>
+          </ul>
+        </section>
+
+        <!-- 2. Folder Structure -->
+        <section id="structure" class="doc-card">
+          <h3 class="fw-bold mb-3">2. Folder & File Structure</h3>
+          <pre><code>tailor-shop/
+├── assets/
+│   ├── css/
+│   │   ├── style.css           # Master design system & CSS variables
+│   │   ├── responsive.css      # Mobile breakpoints & touch styles
+│   │   └── rtl.css             # Right-to-left layout rules
+│   ├── js/
+│   │   ├── theme.js            # Dark/Light mode switcher & persistence
+│   │   ├── rtl.js              # RTL switcher & persistence
+│   │   ├── validation.js       # Form validation & custom toasts
+│   │   ├── main.js             # Sticky header, live filters, countdown
+│   │   └── dashboard.js        # Admin Chart.js logic & table filters
+│   └── images/                 # Organized images (hero, services, team, etc.)
+├── admin/
+│   └── index.html              # Atelier Admin Dashboard
+├── documentation/
+│   └── index.html              # Buyer documentation guide
+├── index.html                  # Home 1 - General Tailoring Studio
+├── index-2.html                # Home 2 - Fashion Boutique & Couture
+├── about.html                  # Studio Story, Timeline, Team
+├── services.html               # 12+ Services Catalog with filters
+├── service-details.html        # Individual Service with pricing add-ons
+├── alterations.html            # Alteration Price List & 24h express
+├── fabrics.html                # Fabric Sourcing & Swatches Library
+├── turnaround-times.html       # Turnaround Schedules & Timelines
+├── pricing.html                # 3-Tier Packages & À la carte menu
+├── blog.html                   # Journal Grid with live search
+├── blog-details.html           # Article view with comment form
+├── contact.html                # Contact info, map card & form
+├── login.html                  # Client Login with password reveal
+├── register.html               # Registration with validation
+├── forgot-password.html        # Password recovery form
+├── 404.html                    # 404 Error page
+├── coming-soon.html            # Launch countdown timer
+└── maintenance.html            # Scheduled maintenance mode</code></pre>
+        </section>
+
+        <!-- 3. Colors -->
+        <section id="colors" class="doc-card">
+          <h3 class="fw-bold mb-3">3. Color Customization</h3>
+          <p>All colors are centrally managed in <code>assets/css/style.css</code> using native CSS variables. Simply edit the variables inside <code>:root</code> to re-brand the entire template in seconds:</p>
+          <pre><code>:root {
+  --color-primary: #171513;        /* Deep Charcoal / Noir */
+  --color-secondary: #C5A880;      /* Sartorial Champagne Gold */
+  --color-accent: #6B1D2F;         /* Royal Burgundy */
+  --bg-sand: #F7F3EB;              /* Warm Ivory Sand */
+  --bg-surface: #FFFFFF;           /* Card White */
+  --text-main: #4A4641;            /* Body Text */
+  --text-heading: #171513;         /* Headings */
+}</code></pre>
+        </section>
+
+        <!-- 4. Typography -->
+        <section id="typography" class="doc-card">
+          <h3 class="fw-bold mb-3">4. Typography Setup</h3>
+          <p>The template pairs <strong>Playfair Display</strong> and <strong>Cormorant Garamond</strong> for editorial luxury headings with <strong>Plus Jakarta Sans</strong> for clean, ultra-readable body text:</p>
+          <pre><code>--font-heading: 'Playfair Display', serif;
+--font-editorial: 'Cormorant Garamond', serif;
+--font-body: 'Plus Jakarta Sans', sans-serif;</code></pre>
+        </section>
+
+        <!-- 5. Dark Mode & RTL -->
+        <section id="darkmode" class="doc-card">
+          <h3 class="fw-bold mb-3">5. Dark Mode & RTL Direction</h3>
+          <p>Dark mode and RTL are completely automated via JavaScript and CSS data attributes:</p>
+          <ul>
+            <li><strong>Dark Theme:</strong> Triggered via <code>[data-theme="dark"]</code> attribute on <code>&lt;html&gt;</code>. Managed by <code>assets/js/theme.js</code>.</li>
+            <li><strong>RTL Direction:</strong> Triggered via <code>[dir="rtl"]</code> on <code>&lt;html&gt;</code>. Managed by <code>assets/js/rtl.js</code> and styled via <code>assets/css/rtl.css</code>.</li>
+          </ul>
+        </section>
+
+        <!-- 6. Forms & Toast -->
+        <section id="forms" class="doc-card">
+          <h3 class="fw-bold mb-3">6. Form Validations & Notifications</h3>
+          <p>All forms include HTML5 validation hooks managed by <code>assets/js/validation.js</code>. To trigger a custom toast programmatically anywhere in your code:</p>
+          <pre><code>window.sartoriaValidation.showToast('Your custom message here!', 'success');</code></pre>
+        </section>
+
+        <!-- 7. Credits -->
+        <section id="credits" class="doc-card">
+          <h3 class="fw-bold mb-3">7. Sources & Credits</h3>
+          <ul>
+            <li><strong>Bootstrap 5.3.3</strong> – Grid, Utilities, Modals (<a href="https://getbootstrap.com" target="_blank">getbootstrap.com</a>)</li>
+            <li><strong>Bootstrap Icons 1.11.3</strong> – Vector iconography (<a href="https://icons.getbootstrap.com" target="_blank">icons.getbootstrap.com</a>)</li>
+            <li><strong>Google Fonts</strong> – Playfair Display, Cormorant Garamond, Plus Jakarta Sans</li>
+            <li><strong>Chart.js 4.4.2</strong> – Admin dashboard interactive charts (<a href="https://chartjs.org" target="_blank">chartjs.org</a>)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

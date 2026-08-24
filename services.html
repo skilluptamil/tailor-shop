@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover our complete range of bespoke tailoring, custom stitching, bridal couture, blouse designs, and precision alterations at Sartoria Royale.">
+  <title>Services Catalog | Sartoria Royale - Custom Tailoring & Stitching</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-atelier">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <span style="line-height: 1;">SARTORIA</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-sm btn-outline-atelier rounded-pill rtl-toggle-btn px-2 py-1" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span class="rtl-text small fw-bold">RTL</span>
+        </button>
+        <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarServices" aria-controls="navbarServices" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarServices">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <i class="bi bi-chevron-down dropdown-chevron"></i></a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
+              <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span class="rtl-text fw-bold">RTL</span>
+          </button>
+          <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= BREADCRUMB HEADER ================= -->
+  <section class="py-5 bg-sand text-center">
+    <div class="container">
+      <div class="section-tag"><i class="bi bi-scissors"></i> Atelier Offerings</div>
+      <h1 class="section-title mb-2">Bespoke Tailoring & Stitching Services</h1>
+      <p class="text-muted mx-auto mb-3" style="max-width: 650px;">
+        Discover our complete repertoire of anatomical bespoke tailoring, haute couture bridal styling, precision express alterations, and curated textile sourcing.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Services</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 1: SPECIALIZED OFFERINGS HUB ================= -->
+  <section class="py-5 border-bottom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- 1. Alterations & Repairs -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 52px; height: 52px;">
+                <i class="bi bi-scissors fs-4"></i>
+              </span>
+              <span class="badge badge-gold">24h Express</span>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Alterations & Repairs</h3>
+            <p class="text-muted small mb-4 flex-grow-1">
+              Precision waist adjustments, hem shortening, suit tapering, zip replacements, and delicate vintage garment preservation.
+            </p>
+            <a href="alterations.html" class="btn btn-sm btn-outline-atelier rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+              Explore Alterations <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Fabric Sourcing -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 52px; height: 52px;">
+                <i class="bi bi-palette fs-4"></i>
+              </span>
+              <span class="badge badge-burgundy">500+ Textiles</span>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Fabrics & Swatches</h3>
+            <p class="text-muted small mb-4 flex-grow-1">
+              Direct access to pure Mulberry silks, French brocades, Italian Super 150s Merino wools, and Egyptian cottons.
+            </p>
+            <a href="fabrics.html" class="btn btn-sm btn-outline-atelier rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+              Explore Fabrics <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Turnaround Schedules -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 52px; height: 52px;">
+                <i class="bi bi-clock-history fs-4"></i>
+              </span>
+              <span class="badge badge-gold">Guaranteed</span>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Turnaround Schedules</h3>
+            <p class="text-muted small mb-4 flex-grow-1">
+              Transparent completion timelines from emergency 24-hour express services to multi-fitting bridal schedules.
+            </p>
+            <a href="turnaround-times.html" class="btn btn-sm btn-outline-atelier rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+              View Schedules <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Pricing & Packages -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 52px; height: 52px;">
+                <i class="bi bi-tags fs-4"></i>
+              </span>
+              <span class="badge badge-outline">Clear Rates</span>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Pricing & Packages</h3>
+            <p class="text-muted small mb-4 flex-grow-1">
+              Transparent tier-based bespoke packages with no consultation or fitting fees and complimentary adjustments.
+            </p>
+            <a href="pricing.html" class="btn btn-sm btn-outline-atelier rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+              View Pricing <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 2: SERVICES CATALOG ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-4">
+        <div class="section-tag"><i class="bi bi-grid"></i> Complete Service Catalog</div>
+        <h2 class="section-title">Explore by Tailoring Specialty</h2>
+        <p class="text-muted mx-auto" style="max-width: 580px;">
+          Filter through our bespoke menswear, couture bridal wear, designer women's stitching, and artisanal garment restorations.
+        </p>
+      </div>
+
+      <!-- Filter Category Buttons -->
+      <div class="filter-btn-group mb-5">
+        <button class="filter-btn service-filter-btn active" data-filter="all">All Services</button>
+        <button class="filter-btn service-filter-btn" data-filter="women">Women's Stitching</button>
+        <button class="filter-btn service-filter-btn" data-filter="men">Men's Bespoke</button>
+        <button class="filter-btn service-filter-btn" data-filter="bridal">Bridal Couture</button>
+        <button class="filter-btn service-filter-btn" data-filter="alterations">Alterations & Restorations</button>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Bridal Wear -->
+        <div class="col-md-6 col-lg-4" id="service-bridal">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="bridal">
+            <a href="service-details.html?service=bridal" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-bridal.jpg" alt="Bridal Wear Couture" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Bridal</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 14-21 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="service-details.html?service=bridal" class="text-heading text-decoration-none">Bridal Gown & Lehenga Couture</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Custom bridal trousseau, heavy zardozi embroidery, intricate cutwork borders, and matching bridal veils.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $199</span>
+              <a href="service-details.html?service=bridal" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Men's Suit -->
+        <div class="col-md-6 col-lg-4" id="service-suits">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="men">
+            <a href="service-details.html?service=suits" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-suit.jpg" alt="Men's Bespoke Suits" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Menswear</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 7-10 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="service-details.html?service=suits" class="text-heading text-decoration-none">Men's Bespoke 2 & 3-Piece Suits</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Savile Row inspired floating canvas construction, super 150s Merino wool, peak or notch lapels, and custom monogramming.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $249</span>
+              <a href="service-details.html?service=suits" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Designer Blouse -->
+        <div class="col-md-6 col-lg-4" id="service-blouse">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="women">
+            <a href="service-details.html?service=blouse" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-blouse.jpg" alt="Designer Blouse Stitching" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Women</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 3-5 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="service-details.html?service=blouse" class="text-heading text-decoration-none">Designer Blouse Stitching</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Princess cut, high neck, backless with latkan tassels, padded cups, and gold piping tailored to saree drapery.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $49</span>
+              <a href="service-details.html?service=blouse" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Evening Dresses -->
+        <div class="col-md-6 col-lg-4" id="service-dresses">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="women">
+            <a href="service-details.html?service=dresses" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-dress.jpg" alt="Custom Dresses & Gowns" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Women</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 5-7 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="service-details.html?service=dresses" class="text-heading text-decoration-none">Custom Evening Gowns & Dresses</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Red carpet silk satin gowns, pleated cocktail dresses, cowl necklines, and structured corset bodices.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $119</span>
+              <a href="service-details.html?service=dresses" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Royal Sherwani & Kurta -->
+        <div class="col-md-6 col-lg-4" id="service-sherwani">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="men">
+            <a href="service-details.html?service=sherwani" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-kurta.jpg" alt="Royal Sherwani and Silk Kurta" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Menswear</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 7-10 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="service-details.html?service=sherwani" class="text-heading text-decoration-none">Royal Sherwani & Silk Kurtas</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Custom tailored ivory and gold thread embroidered sherwanis, mandarin collars, churidar pyjamas, and bandhgalas.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $179</span>
+              <a href="service-details.html?service=sherwani" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Vintage Restorations -->
+        <div class="col-md-6 col-lg-4" id="service-alterations">
+          <div class="card-atelier service-grid-card h-100 d-flex flex-column" data-category="alterations">
+            <a href="alterations.html" class="card-img-top-wrapper d-block text-decoration-none">
+              <img src="assets/images/services/service-restoration.jpg" alt="Vintage Garment Restoration" loading="lazy">
+            </a>
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-burgundy">Artisanal</span>
+              <a href="turnaround-times.html" class="small text-muted text-decoration-none"><i class="bi bi-clock me-1 text-gold"></i> 3-5 Days</a>
+            </div>
+            <h4 class="h5 mb-2"><a href="alterations.html" class="text-heading text-decoration-none">Vintage Restoration & Relining</a></h4>
+            <p class="text-muted small mb-3 flex-grow-1">Delicate hand invisible mending, silk lining replacement, antique lace restructuring, and heirloom gown preservation.</p>
+            <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+              <span class="fw-bold text-gold fs-5">From $45</span>
+              <a href="alterations.html" class="btn btn-sm btn-outline-atelier rounded-pill">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 3: THE 4-STAGE BESPOKE PROCESS ================= -->
+  <section class="section-padding bg-sand">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-stars"></i> Craftsmanship Workflow</div>
+        <h2 class="section-title">The Sartoria Bespoke Journey</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          From the initial private measurement salon to the final steam hand-press, every garment undergoes an uncompromising four-step artisanal cycle.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Step 1 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100 text-center position-relative">
+            <div class="badge badge-gold position-absolute top-0 end-0 m-3">Stage 01</div>
+            <div class="mx-auto mb-3 mt-2 btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 64px; height: 64px;">
+              <i class="bi bi-rulers fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Anatomical Measurement</h3>
+            <p class="text-muted small mb-3">
+              Over 30 distinct body measurements recorded along with posture profiling, shoulder balance, and lifestyle preference.
+            </p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal" class="small text-gold fw-semibold text-decoration-none mt-auto">
+              Book Fitting <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100 text-center position-relative">
+            <div class="badge badge-gold position-absolute top-0 end-0 m-3">Stage 02</div>
+            <div class="mx-auto mb-3 mt-2 btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 64px; height: 64px;">
+              <i class="bi bi-palette-fill fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Fabric & Pattern Drafting</h3>
+            <p class="text-muted small mb-3">
+              Curate your textiles from our 500+ heritage swatch library before our master cutter drafts your individual paper pattern.
+            </p>
+            <a href="fabrics.html" class="small text-gold fw-semibold text-decoration-none mt-auto">
+              Browse Fabrics <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100 text-center position-relative">
+            <div class="badge badge-gold position-absolute top-0 end-0 m-3">Stage 03</div>
+            <div class="mx-auto mb-3 mt-2 btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 64px; height: 64px;">
+              <i class="bi bi-person-bounding-box fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Basted Trial Fitting</h3>
+            <p class="text-muted small mb-3">
+              A mid-construction trial garment assembled with white baste thread to sculpt collar pitch, waist suppression, and drape.
+            </p>
+            <a href="service-details.html" class="small text-gold fw-semibold text-decoration-none mt-auto">
+              Fitting Details <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100 text-center position-relative">
+            <div class="badge badge-gold position-absolute top-0 end-0 m-3">Stage 04</div>
+            <div class="mx-auto mb-3 mt-2 btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 64px; height: 64px;">
+              <i class="bi bi-award-fill fs-3"></i>
+            </div>
+            <h3 class="h5 fw-bold mb-2">Hand Finishing & Delivery</h3>
+            <p class="text-muted small mb-3">
+              Silk buttonholes hand-stitched, pick-stitched lapels, hand-pressed with industrial gravity iron, and encased in luxury garment bag.
+            </p>
+            <a href="turnaround-times.html" class="small text-gold fw-semibold text-decoration-none mt-auto">
+              Turnaround Times <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 4: SERVICE TIER COMPARISON ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-sliders"></i> Tier Comparison</div>
+        <h2 class="section-title">Select Your Tailoring Standard</h2>
+        <p class="text-muted mx-auto" style="max-width: 580px;">
+          Whether you require a fully hand-canvassed bespoke masterpiece or a rapid precision alteration, Sartoria delivers perfection.
+        </p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+        <!-- 1. Full Bespoke -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface border border-2 border-warning border-opacity-50 shadow-lg rounded-4 p-4 p-lg-5 h-100 d-flex flex-column position-relative">
+            <span class="badge badge-gold position-absolute top-0 start-50 translate-middle px-3 py-2 shadow-sm">
+              <i class="bi bi-stars"></i> Signature Bespoke
+            </span>
+            <div class="text-center mb-4 mt-2">
+              <h3 class="h4 fw-bold mb-1">Full Bespoke Couture</h3>
+              <p class="text-muted small">Hand-crafted from a blank paper pattern</p>
+              <div class="display-6 fw-bold text-gold my-3"><small class="fs-6 text-muted">From</small> $199</div>
+              <span class="badge badge-soft"><i class="bi bi-clock me-1"></i> 14–21 Days Standard</span>
+            </div>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-4 small flex-grow-1">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 30+ Individual body measurements</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 100% Full floating horsehair canvas</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 2 to 3 In-person basted trial fittings</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Pure Mulberry silk lining included</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Hand-sewn Milanese buttonholes</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Complimentary lifetime seam warranty</li>
+            </ul>
+            <button class="btn btn-custom btn-gold btn-custom-pill w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+              Book Bespoke Fitting
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Made to Measure -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 p-lg-5 h-100 d-flex flex-column">
+            <div class="text-center mb-4">
+              <h3 class="h4 fw-bold mb-1">Made-to-Measure</h3>
+              <p class="text-muted small">Modified from standard studio blocks</p>
+              <div class="display-6 fw-bold text-heading my-3"><small class="fs-6 text-muted">From</small> $99</div>
+              <span class="badge badge-outline"><i class="bi bi-clock me-1"></i> 7–10 Days Standard</span>
+            </div>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-4 small flex-grow-1">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 15 Key anatomical adjustments</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Half-canvas structured chest piece</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 1 Final trial fitting session</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Choice of 100+ stock heritage fabrics</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Hand-finished hems and collar</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> 60-day fit alteration guarantee</li>
+            </ul>
+            <a href="pricing.html" class="btn btn-custom btn-outline-atelier btn-custom-pill w-100">
+              View Pricing Packages
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Express Alterations -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 p-lg-5 h-100 d-flex flex-column">
+            <div class="text-center mb-4">
+              <h3 class="h4 fw-bold mb-1">Express Alterations</h3>
+              <p class="text-muted small">Precision resizing & silhouette tuning</p>
+              <div class="display-6 fw-bold text-heading my-3"><small class="fs-6 text-muted">From</small> $15</div>
+              <span class="badge badge-burgundy"><i class="bi bi-lightning-charge me-1"></i> 24h Rush Available</span>
+            </div>
+            <ul class="list-unstyled d-flex flex-column gap-3 mb-4 small flex-grow-1">
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Original hem & Euro-stitch preservation</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Jacket waist suppression & expansion</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Sleeve tapering & pitch rotation</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Saree fall, pico & tassel mounting</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Invisible hand mending for tears</li>
+              <li class="d-flex align-items-center gap-2"><i class="bi bi-check-circle-fill text-gold"></i> Same-day & 24h express turnaround</li>
+            </ul>
+            <a href="alterations.html" class="btn btn-custom btn-outline-atelier btn-custom-pill w-100">
+              Explore Alterations
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 5: CRAFTSMANSHIP GUARANTEE ================= -->
+  <section class="py-5 bg-sand">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex align-items-start gap-3">
+            <div class="btn-icon-square rounded-circle bg-surface text-gold flex-shrink-0 shadow-sm">
+              <i class="bi bi-patch-check-fill fs-4"></i>
+            </div>
+            <div>
+              <h4 class="h6 fw-bold mb-1"><a href="about.html" class="text-heading text-decoration-none">100% Fit Guarantee</a></h4>
+              <p class="small text-muted mb-0">We adjust and tune every stitch until your silhouette is effortless and flawless.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex align-items-start gap-3">
+            <div class="btn-icon-square rounded-circle bg-surface text-gold flex-shrink-0 shadow-sm">
+              <i class="bi bi-gem fs-4"></i>
+            </div>
+            <div>
+              <h4 class="h6 fw-bold mb-1"><a href="about.html" class="text-heading text-decoration-none">Master Tailor Craft</a></h4>
+              <p class="small text-muted mb-0">30+ years of Savile Row bespoke and couture dressmaking heritage.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex align-items-start gap-3">
+            <div class="btn-icon-square rounded-circle bg-surface text-gold flex-shrink-0 shadow-sm">
+              <i class="bi bi-shield-fill-check fs-4"></i>
+            </div>
+            <div>
+              <h4 class="h6 fw-bold mb-1"><a href="contact.html" class="text-heading text-decoration-none">Lifetime Seam Care</a></h4>
+              <p class="small text-muted mb-0">Complimentary minor adjustments and seam maintenance on all bespoke suits.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="d-flex align-items-start gap-3">
+            <div class="btn-icon-square rounded-circle bg-surface text-gold flex-shrink-0 shadow-sm">
+              <i class="bi bi-lightning-charge-fill fs-4"></i>
+            </div>
+            <div>
+              <h4 class="h6 fw-bold mb-1"><a href="turnaround-times.html" class="text-heading text-decoration-none">24h Express Rush</a></h4>
+              <p class="small text-muted mb-0">Need urgent stitching for an event? Our express team delivers in 24 to 48 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 6: APPOINTMENT CTA BANNER ================= -->
+  <section class="section-padding text-center bg-dark-atelier text-white position-relative overflow-hidden">
+    <div class="container position-relative" style="z-index: 2;">
+      <span class="badge badge-gold mb-3">Private Fitting Session</span>
+      <h2 class="display-5 fw-bold font-editorial mb-3 text-white">Ready to Stitch Your Masterpiece?</h2>
+      <p class="text-light opacity-75 mx-auto mb-4" style="max-width: 600px;">
+        Book a one-on-one measurement consultation at our atelier or request a master tailor home fitting visit.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <button class="btn-custom btn-gold btn-custom-pill shadow-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+          <i class="bi bi-calendar-check-fill"></i> Schedule Fitting Session
+        </button>
+        <a href="contact.html" class="btn-custom btn-outline-light btn-custom-pill">
+          <i class="bi bi-geo-alt-fill"></i> Visit Studio & Contact
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-atelier">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+            <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+            <span class="text-white" style="line-height: 1;">SARTORIA</span>
+          </a>
+          <p class="small text-muted mb-4">
+            Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="alterations.html">Alterations</a></li>
+            <li><a href="fabrics.html">Fabric Showcase</a></li>
+            <li><a href="turnaround-times.html">Turnaround Times</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-services-col">
+          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+          <ul class="footer-links">
+            <li><a href="#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
+            <li><a href="#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
+            <li><a href="#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
+            <li><a href="#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
+            <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading mb-3">Newsletter</h5>
+          <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <div class="mt-3 text-muted small">
+            <i class="bi bi-shield-check text-gold"></i> We respect your privacy. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="documentation/index.html">Documentation</a>
+          <a href="admin/index.html">Admin Dashboard</a>
+          <a href="404.html">404 Demo</a>
+          <a href="coming-soon.html">Coming Soon</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title h5">Book a Tailoring Appointment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Full Name *</label>
+                <input type="text" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Phone *</label>
+                <input type="tel" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Email *</label>
+                <input type="email" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Service *</label>
+                <select class="form-select form-select-custom" id="appointmentService" required>
+                  <option value="Bridal Wear">Bridal Wear Couture</option>
+                  <option value="Men's Bespoke Suit">Men's Bespoke Suit</option>
+                  <option value="Designer Blouse">Designer Blouse Stitching</option>
+                  <option value="Custom Dress">Custom Dress / Gown</option>
+                  <option value="Alterations">Alterations & Resizing</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Preferred Date *</label>
+                <input type="date" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Time Slot *</label>
+                <select class="form-select form-select-custom" required>
+                  <option>Morning (10:00 AM - 1:00 PM)</option>
+                  <option>Afternoon (1:00 PM - 4:30 PM)</option>
+                  <option>Evening (4:30 PM - 7:30 PM)</option>
+                </select>
+              </div>
+              <div class="col-12 text-end pt-2">
+                <button type="submit" class="btn-custom btn-gold btn-custom-pill">Schedule Appointment</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

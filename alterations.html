@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert clothing alterations and tailoring repairs in New York. Hemming, waist adjustment, sleeve shortening, invisible mending, and 24h express turnaround.">
+  <title>Alterations & Repairs | Sartoria Royale - Master Tailoring</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-atelier">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <span style="line-height: 1;">SARTORIA</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-sm btn-outline-atelier rounded-pill rtl-toggle-btn px-2 py-1" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span class="rtl-text small fw-bold">RTL</span>
+        </button>
+        <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAlterations" aria-controls="navbarAlterations" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarAlterations">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
+              <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span class="rtl-text fw-bold">RTL</span>
+          </button>
+          <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Alteration
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb Header -->
+  <section class="py-5 bg-sand text-center">
+    <div class="container">
+      <div class="section-tag"><i class="bi bi-scissors"></i> Precision Restorations</div>
+      <h1 class="section-title mb-2">Clothing Alterations & Fitting Service</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Alterations</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Alterations Content -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5 mb-5">
+        <div class="col-lg-6">
+          <div class="section-tag"><i class="bi bi-patch-check"></i> Invisible Tailoring</div>
+          <h2 class="section-title">Restore the Flawless Fit of Your Existing Wardrobe</h2>
+          <p class="text-muted leading-relaxed">
+            Whether your luxury suit jacket feels slightly wide on the shoulders, your vintage silk gown needs waist restructuring, or your favorite designer trousers require precision tapering, our alteration specialists restore original proportions without leaving traces of modification.
+          </p>
+          <div class="row g-3 pt-2">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold small">Original Hem Preservation</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold small">24h Express Available</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold small">Invisible Mending</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-gold"></i>
+                <span class="fw-semibold small">Wedding Dress Restructuring</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/images/alterations/alteration-craft.jpg" alt="Alteration Craftsmanship" class="rounded-4 shadow-lg border border-1 w-100">
+        </div>
+      </div>
+
+      <!-- Alteration Pricing Menu -->
+      <div class="text-center max-w-700 mx-auto mb-5">
+        <div class="section-tag"><i class="bi bi-tag"></i> Transparent Rates</div>
+        <h2 class="section-title">Common Alteration Price List</h2>
+        <p class="section-desc mx-auto">Standard pricing for common alterations. Complex couture or multi-layered bridal gowns quoted upon in-person fitting.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Trousers & Pants -->
+        <div class="col-md-6">
+          <div class="card-atelier">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="service-icon-box mb-0"><i class="bi bi-align-bottom"></i></div>
+              <h3 class="h5 mb-0">Trousers, Jeans & Slacks</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Plain Trouser Hemming</span>
+                <span class="fw-bold text-gold">$18</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Jean Hem with Original Cuff Saved</span>
+                <span class="fw-bold text-gold">$24</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Waist & Seat In / Out Adjustment</span>
+                <span class="fw-bold text-gold">$28</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Leg Tapering (Knee to Ankle)</span>
+                <span class="fw-bold text-gold">$32</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>New Brass / Metal Zipper Installation</span>
+                <span class="fw-bold text-gold">$22</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Jackets & Coats -->
+        <div class="col-md-6">
+          <div class="card-atelier">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="service-icon-box mb-0"><i class="bi bi-person-badge"></i></div>
+              <h3 class="h5 mb-0">Jackets, Blazers & Overcoats</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Shorten Jacket Sleeves (Plain)</span>
+                <span class="fw-bold text-gold">$38</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Shorten Sleeves from Shoulder (Working Buttonholes)</span>
+                <span class="fw-bold text-gold">$65</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Take in Jacket Waist & Back Seams</span>
+                <span class="fw-bold text-gold">$48</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Shoulder Narrowing & Pad Reshaping</span>
+                <span class="fw-bold text-gold">$75</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Complete Jacket Relining (Silk or Cupro)</span>
+                <span class="fw-bold text-gold">$110</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Dresses & Bridal Gowns -->
+        <div class="col-md-6">
+          <div class="card-atelier">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="service-icon-box mb-0"><i class="bi bi-gem"></i></div>
+              <h3 class="h5 mb-0">Dresses, Skirts & Bridal Wear</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Evening Dress Hem Shortening (Plain)</span>
+                <span class="fw-bold text-gold">$35</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Multi-Layered Tulle & Chiffon Gown Hem</span>
+                <span class="fw-bold text-gold">$75</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Take In / Let Out Bodice & Bust Darts</span>
+                <span class="fw-bold text-gold">$45</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Invisible Back Zipper Replacement</span>
+                <span class="fw-bold text-gold">$28</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Bridal Gown Bustle Installation (3-Point)</span>
+                <span class="fw-bold text-gold">$60</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Blouses & Shirts -->
+        <div class="col-md-6">
+          <div class="card-atelier">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="service-icon-box mb-0"><i class="bi bi-flower1"></i></div>
+              <h3 class="h5 mb-0">Shirts, Blouses & Tops</h3>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Shorten Shirt Sleeves with Cuff Placket</span>
+                <span class="fw-bold text-gold">$26</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Slim Down Shirt Sides & Add Back Darts</span>
+                <span class="fw-bold text-gold">$22</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Shorten Shirt Bottom Hem (Straight/Curved)</span>
+                <span class="fw-bold text-gold">$18</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Reshape Blouse Neckline & Add Piping</span>
+                <span class="fw-bold text-gold">$32</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between px-0">
+                <span>Attach Padded Bra Cups into Blouse</span>
+                <span class="fw-bold text-gold">$20</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Express Turnaround Banner -->
+      <div class="card bg-dark-atelier text-white border-0 rounded-4 p-4 p-md-5 mt-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="badge badge-gold mb-2">Urgent Alterations</span>
+            <h3 class="text-white h2 mb-2">Need It Done in 24 Hours?</h3>
+            <p class="text-light opacity-75 mb-0">
+              We offer same-day and 24-hour express turnaround for last-minute galas, interviews, and weddings. Drop off before 11:00 AM for same-day evening pickup.
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <button class="btn-custom btn-gold btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-service-select="Alterations & Resizing">
+              <i class="bi bi-lightning-charge"></i> Book Express Fitting
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-atelier">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+            <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+            <span class="text-white" style="line-height: 1;">SARTORIA</span>
+          </a>
+          <p class="small text-muted mb-4">
+            Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="alterations.html">Alterations</a></li>
+            <li><a href="fabrics.html">Fabric Showcase</a></li>
+            <li><a href="turnaround-times.html">Turnaround Times</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-services-col">
+          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
+            <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
+            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
+            <li><a href="services.html#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="services.html#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
+            <li><a href="#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading mb-3">Newsletter</h5>
+          <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <div class="mt-3 text-muted small">
+            <i class="bi bi-shield-check text-gold"></i> We respect your privacy. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="documentation/index.html">Documentation</a>
+          <a href="admin/index.html">Admin Dashboard</a>
+          <a href="404.html">404 Demo</a>
+          <a href="coming-soon.html">Coming Soon</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title h5">Book an Alteration Fitting</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Full Name *</label>
+                <input type="text" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Phone *</label>
+                <input type="tel" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Garment Type *</label>
+                <select class="form-select form-select-custom" required>
+                  <option value="Trousers">Trousers / Jeans</option>
+                  <option value="Jacket">Suit Jacket / Blazer</option>
+                  <option value="Dress">Dress / Gown</option>
+                  <option value="Bridal">Bridal Gown / Lehenga</option>
+                  <option value="Shirt">Shirt / Blouse</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Urgency *</label>
+                <select class="form-select form-select-custom" required>
+                  <option value="Standard">Standard (3-5 Days)</option>
+                  <option value="Express">Express (24-48 Hours)</option>
+                  <option value="SameDay">Same Day Rush</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Drop-off Date *</label>
+                <input type="date" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Preferred Time Slot *</label>
+                <select class="form-select form-select-custom" required>
+                  <option>Morning (10:00 AM - 1:00 PM)</option>
+                  <option>Afternoon (1:00 PM - 4:30 PM)</option>
+                  <option>Evening (4:30 PM - 7:30 PM)</option>
+                </select>
+              </div>
+              <div class="col-12 text-end pt-2">
+                <button type="submit" class="btn-custom btn-gold btn-custom-pill">Confirm Fitting Session</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

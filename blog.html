@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore tailoring insights, bespoke style guides, fabric care tutorials, and bridal couture trends from the master artisans at Sartoria Royale.">
+  <title>The Atelier Journal | Sartoria Royale - Tailoring & Style Blog</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Main Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-atelier">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="index.html">
+        <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+        <span style="line-height: 1;">SARTORIA</span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-sm btn-outline-atelier rounded-pill rtl-toggle-btn px-2 py-1" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+          <span class="rtl-text small fw-bold">RTL</span>
+        </button>
+        <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBlog" aria-controls="navbarBlog" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-1 text-heading"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarBlog">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <i class="bi bi-chevron-down dropdown-chevron"></i></a>
+            <ul class="dropdown-menu dropdown-menu-custom">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
+              <li><a class="dropdown-item" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link nav-link-custom" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
+            <span class="rtl-text fw-bold">RTL</span>
+          </button>
+          <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Appointment
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= BREADCRUMB HEADER ================= -->
+  <section class="py-5 bg-sand text-center">
+    <div class="container">
+      <div class="section-tag"><i class="bi bi-newspaper"></i> The Atelier Journal</div>
+      <h1 class="section-title mb-2">Tailoring Guides & Sartorial Insights</h1>
+      <p class="text-muted mx-auto mb-3" style="max-width: 650px;">
+        Immerse yourself in bespoke tailoring craftsmanship, textile guides, bridal couture scheduling, and precision wardrobe alteration tutorials.
+      </p>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center mb-0">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Blog</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 1: FEATURED EDITORIAL STORY ================= -->
+  <section class="py-5 border-bottom">
+    <div class="container">
+      <div class="card bg-surface border-0 shadow-lg rounded-4 overflow-hidden">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6">
+            <div class="position-relative h-100" style="min-height: 380px;">
+              <img src="assets/images/blog/blog-hero.jpg" alt="The Art of the Master Cut" class="w-100 h-100 object-fit-cover position-absolute top-0 start-0" style="object-fit: cover;">
+            </div>
+          </div>
+          <div class="col-lg-6 p-4 p-md-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <span class="badge badge-gold">Featured Editorial</span>
+              <span class="badge badge-outline"><i class="bi bi-clock me-1"></i> 8 Min Read</span>
+            </div>
+            <h2 class="h3 fw-bold mb-3">
+              <a href="blog-details.html" class="text-heading text-decoration-none">
+                The Art of the Master Cut: Inside Sartoria's 40-Hour Bespoke Construction
+              </a>
+            </h2>
+            <p class="text-muted mb-4">
+              From hand-padded lapels to full floating horsehair chest canvas, discover the time-honored artisanal techniques that distinguish true bespoke tailoring from commercial mass production.
+            </p>
+            <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-3 border-top">
+              <div class="d-flex align-items-center gap-3">
+                <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 44px; height: 44px;">
+                  <i class="bi bi-person-fill fs-5"></i>
+                </span>
+                <div>
+                  <strong class="d-block text-heading small">Arthur Vance</strong>
+                  <small class="text-muted">Master Tailor & Cutter</small>
+                </div>
+              </div>
+              <a href="blog-details.html" class="btn btn-custom btn-gold btn-custom-pill">
+                Read Full Story <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 2: QUICK TOPIC RESOURCE HUB ================= -->
+  <section class="py-5 bg-sand border-bottom">
+    <div class="container">
+      <div class="row g-4">
+        <!-- 1. Suit Architecture -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 50px; height: 50px;">
+                <i class="bi bi-suit-heart fs-4"></i>
+              </span>
+              <span class="badge badge-gold">Menswear</span>
+            </div>
+            <h3 class="h6 fw-bold mb-2">Suit Construction & Fit</h3>
+            <p class="text-muted small mb-3 flex-grow-1">
+              Floating canvas, lapel pitch rotation, gorge height, and silhouette balance.
+            </p>
+            <a href="service-details.html" class="small text-gold fw-semibold text-decoration-none">
+              Explore Guide <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Luxury Textiles -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 50px; height: 50px;">
+                <i class="bi bi-palette fs-4"></i>
+              </span>
+              <span class="badge badge-burgundy">Textiles</span>
+            </div>
+            <h3 class="h6 fw-bold mb-2">Luxury Fabric Sourcing</h3>
+            <p class="text-muted small mb-3 flex-grow-1">
+              Silk momme counts, super 150s Merino wool microns, and French brocade weaves.
+            </p>
+            <a href="fabrics.html" class="small text-gold fw-semibold text-decoration-none">
+              View Swatches <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. Bridal Trousseau -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 50px; height: 50px;">
+                <i class="bi bi-gem fs-4"></i>
+              </span>
+              <span class="badge badge-gold">Bridal</span>
+            </div>
+            <h3 class="h6 fw-bold mb-2">Bridal Trousseau Timeline</h3>
+            <p class="text-muted small mb-3 flex-grow-1">
+              Month-by-month fitting schedules for bridal gowns, lehengas, and sherwanis.
+            </p>
+            <a href="turnaround-times.html" class="small text-gold fw-semibold text-decoration-none">
+              Fitting Schedules <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. Wardrobe Alteration -->
+        <div class="col-lg-3 col-md-6">
+          <div class="card bg-surface border h-100 rounded-4 p-4 d-flex flex-column shadow-sm transition-hover">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <span class="btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 50px; height: 50px;">
+                <i class="bi bi-scissors fs-4"></i>
+              </span>
+              <span class="badge badge-outline">Alterations</span>
+            </div>
+            <h3 class="h6 fw-bold mb-2">Wardrobe Alteration Secrets</h3>
+            <p class="text-muted small mb-3 flex-grow-1">
+              Euro-hem preservation, waist tapering, and vintage heirloom restoration.
+            </p>
+            <a href="alterations.html" class="small text-gold fw-semibold text-decoration-none">
+              Alteration Tips <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 3: MAIN BLOG ARTICLES & SIDEBAR ================= -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Main Blog Grid (Left) -->
+        <div class="col-lg-8">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="h4 fw-bold mb-0">Latest Journal Articles</h2>
+            <span class="text-muted small">Showing all articles</span>
+          </div>
+
+          <div class="row g-4">
+            <!-- Article 1 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Style & Trends">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/blog/blog-1.jpg" alt="Anatomy of a Bespoke Suit" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Style & Trends</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 5 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">The Anatomy of a Bespoke Suit: Canvas vs Fused</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">Understand how horsehair floating canvas transforms garment drape, chest shape, and longevity compared to commercial fused jackets.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Arthur Vance</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Fabric Guide">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/blog/blog-2.jpg" alt="Natural Textiles Guide" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Fabric Guide</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 7 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">Natural Textiles 101: Silk Momme, Wool Super Counts & Linen GSM</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">An essential primer on fabric density, yarn micron grades, and breathability metrics when choosing custom stitching materials.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Helena Vance</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Bridal Couture">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/blog/blog-3.jpg" alt="Bridal Fitting Timelines" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Bridal Couture</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 6 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">Bridal Fitting Timelines: When to Book Your Trousseau</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">Plan your wedding dress journey with our comprehensive 6-month countdown from initial sketch to final veil fitting.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Rajesh K.</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Alteration Tips">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/blog/blog-4.jpg" alt="Wardrobe Alteration Secrets" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Alteration Tips</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 4 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">5 Precision Alterations That Instantly Elevate Any Outfit</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">How small adjustments to sleeve pitch, trouser break, and waist suppression can give off-the-rack garments a bespoke posture.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Matteo Rossi</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Style & Trends">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/services/service-blouse.jpg" alt="Designer Blouse Necklines" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Style & Trends</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 5 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">Modern Saree Blouse Necklines: From Princess Cut to Sweetheart</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">Discover which necklines best compliment your shoulder width and jewellery selection for festive couture ensembles.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Helena Vance</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="col-md-6 blog-article-col">
+              <div class="card-atelier blog-card-item h-100 d-flex flex-column" data-category="Fabric Guide">
+                <a href="blog-details.html" class="card-img-top-wrapper d-block text-decoration-none" style="aspect-ratio: 16/10;">
+                  <img src="assets/images/fabrics/fabric-showcase.jpg" alt="Pure Silk and Brocade Care" loading="lazy">
+                </a>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <span class="badge badge-gold blog-category">Fabric Guide</span>
+                  <span class="small text-muted"><i class="bi bi-clock me-1 text-gold"></i> 6 min read</span>
+                </div>
+                <h3 class="h5 mb-2 blog-title"><a href="blog-details.html" class="text-decoration-none text-heading">Brocade & Zardozi Care: How to Prevent Thread Tarnish</a></h3>
+                <p class="text-muted small mb-3 blog-desc flex-grow-1">Proven conservation practices for metallic gold threads, real zari borders, and pure Banarasi silk garments.</p>
+                <div class="d-flex justify-content-between align-items-center mt-auto pt-2 border-top">
+                  <small class="text-muted"><i class="bi bi-person me-1"></i> Arthur Vance</small>
+                  <a href="blog-details.html" class="btn btn-sm btn-link text-gold text-decoration-none fw-bold p-0">Read More <i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar (Right) -->
+        <div class="col-lg-4">
+          <!-- Search Widget -->
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 mb-4">
+            <h5 class="h6 fw-bold mb-3"><i class="bi bi-search text-gold me-2"></i> Search Journal</h5>
+            <div class="input-group">
+              <input type="text" id="blogSearchInput" class="form-control form-control-custom" placeholder="Search topics, fabrics...">
+              <button class="btn btn-gold" type="button" aria-label="Search"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+
+          <!-- Category Filter Widget -->
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 mb-4">
+            <h5 class="h6 fw-bold mb-3"><i class="bi bi-folder-fill text-gold me-2"></i> Categories</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2"><a href="#" class="blog-category-filter text-decoration-none text-muted d-flex justify-content-between align-items-center" data-category="all"><span>All Articles</span> <span class="badge bg-sand text-heading">6</span></a></li>
+              <li class="mb-2"><a href="#" class="blog-category-filter text-decoration-none text-muted d-flex justify-content-between align-items-center" data-category="Style & Trends"><span>Style & Trends</span> <span class="badge bg-sand text-heading">2</span></a></li>
+              <li class="mb-2"><a href="#" class="blog-category-filter text-decoration-none text-muted d-flex justify-content-between align-items-center" data-category="Fabric Guide"><span>Fabric Guide</span> <span class="badge bg-sand text-heading">2</span></a></li>
+              <li class="mb-2"><a href="#" class="blog-category-filter text-decoration-none text-muted d-flex justify-content-between align-items-center" data-category="Bridal Couture"><span>Bridal Couture</span> <span class="badge bg-sand text-heading">1</span></a></li>
+              <li><a href="#" class="blog-category-filter text-decoration-none text-muted d-flex justify-content-between align-items-center" data-category="Alteration Tips"><span>Alteration Tips</span> <span class="badge bg-sand text-heading">1</span></a></li>
+            </ul>
+          </div>
+
+          <!-- Trending Articles Widget -->
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 mb-4">
+            <h5 class="h6 fw-bold mb-3"><i class="bi bi-fire text-gold me-2"></i> Trending Reads</h5>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex gap-3 align-items-center">
+                <img src="assets/images/blog/blog-1.jpg" alt="Suit Canvas" class="rounded-3 object-fit-cover" style="width: 65px; height: 60px;">
+                <div>
+                  <h6 class="small fw-bold mb-1"><a href="blog-details.html" class="text-heading text-decoration-none">Anatomy of a Bespoke Floating Canvas</a></h6>
+                  <small class="text-muted">5 min read • Arthur Vance</small>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="assets/images/blog/blog-3.jpg" alt="Bridal Timelines" class="rounded-3 object-fit-cover" style="width: 65px; height: 60px;">
+                <div>
+                  <h6 class="small fw-bold mb-1"><a href="blog-details.html" class="text-heading text-decoration-none">6-Month Bridal Fitting Countdown</a></h6>
+                  <small class="text-muted">6 min read • Rajesh K.</small>
+                </div>
+              </div>
+              <div class="d-flex gap-3 align-items-center">
+                <img src="assets/images/blog/blog-4.jpg" alt="Alteration Secrets" class="rounded-3 object-fit-cover" style="width: 65px; height: 60px;">
+                <div>
+                  <h6 class="small fw-bold mb-1"><a href="blog-details.html" class="text-heading text-decoration-none">5 Quick Alterations for Fit Perfection</a></h6>
+                  <small class="text-muted">4 min read • Matteo Rossi</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Download Guide Widget -->
+          <div class="card bg-surface border shadow-sm rounded-4 p-4 mb-4 text-center">
+            <div class="mx-auto mb-3 btn-icon-square rounded-circle bg-sand text-gold border-0" style="width: 54px; height: 54px;">
+              <i class="bi bi-file-earmark-pdf-fill fs-3"></i>
+            </div>
+            <h5 class="h6 fw-bold mb-2">2026 Sartoria Style Guide</h5>
+            <p class="small text-muted mb-3">Download our complimentary 36-page guide on suit silhouettes, lapel widths, and fabric care.</p>
+            <button class="btn btn-sm btn-outline-atelier rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+              <i class="bi bi-download me-1"></i> Request Free Guide
+            </button>
+          </div>
+
+          <!-- Newsletter Card -->
+          <div class="card bg-dark-atelier text-white border-0 shadow-sm rounded-4 p-4">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-envelope-heart-fill text-gold fs-4"></i>
+              <h5 class="h6 fw-bold mb-0 text-white">Subscribe to Journal</h5>
+            </div>
+            <p class="small text-light opacity-75 mb-3">Receive monthly tailoring insights, seasonal fabric swatch lookbooks, and VIP invitations.</p>
+            <form class="newsletter-form">
+              <input type="email" class="form-control form-control-custom mb-2" placeholder="Your email address" required>
+              <button type="submit" class="btn-custom btn-gold btn-custom-pill w-100">Join Sartoria Journal</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 4: FABRIC CARE & LONGEVITY MASTERCLASS ================= -->
+  <section class="section-padding bg-sand">
+    <div class="container">
+      <div class="text-center mb-5">
+        <div class="section-tag"><i class="bi bi-shield-check"></i> Atelier Care Guide</div>
+        <h2 class="section-title">Garment Care & Fabric Longevity</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          Preserve the structure, drape, and tactile richness of your bespoke wardrobe with our master artisan preservation standards.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Pure Wool -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="btn-icon-square rounded-circle bg-sand text-gold border-0 mb-3" style="width: 52px; height: 52px;">
+              <i class="bi bi-shield-shaded fs-4"></i>
+            </div>
+            <h4 class="h6 fw-bold mb-2">Pure Wool & Canvas</h4>
+            <p class="small text-muted mb-0">
+              Never machine wash or heavily dry clean. Air out on contoured cedar hangers and gently steam to refresh fibers.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Mulberry Silk -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="btn-icon-square rounded-circle bg-sand text-gold border-0 mb-3" style="width: 52px; height: 52px;">
+              <i class="bi bi-droplet-half fs-4"></i>
+            </div>
+            <h4 class="h6 fw-bold mb-2">Mulberry Silk & Linings</h4>
+            <p class="small text-muted mb-0">
+              Store away from UV sunlight in 100% breathable cotton bags. Protect metallic threads from direct moisture and perfume.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Linen & Cotton -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="btn-icon-square rounded-circle bg-sand text-gold border-0 mb-3" style="width: 52px; height: 52px;">
+              <i class="bi bi-water fs-4"></i>
+            </div>
+            <h4 class="h6 fw-bold mb-2">Linen & Fine Cottons</h4>
+            <p class="small text-muted mb-0">
+              Embrace the relaxed natural crease of Irish linen. Light steam pressing while slightly damp restores sharp collars and cuffs.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Seasonal Adjustments -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card bg-surface border-0 shadow-sm rounded-4 p-4 h-100">
+            <div class="btn-icon-square rounded-circle bg-sand text-gold border-0 mb-3" style="width: 52px; height: 52px;">
+              <i class="bi bi-arrow-repeat fs-4"></i>
+            </div>
+            <h4 class="h6 fw-bold mb-2">Seasonal Seam Check</h4>
+            <p class="small text-muted mb-0">
+              Bring bespoke pieces in every 6 months for complimentary seam tightening, button reinforcement, and deep steam shaping.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 5: ATELIER BEHIND-THE-SCENES ================= -->
+  <section class="py-5 border-top border-bottom">
+    <div class="container text-center">
+      <div class="section-tag mb-2"><i class="bi bi-camera-fill"></i> Inside the Atelier</div>
+      <h2 class="h3 fw-bold mb-4">Behind the Shears: Daily Craftsmanship</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <a href="blog-details.html" class="d-block rounded-4 overflow-hidden shadow-sm transition-hover" style="height: 180px;">
+            <img src="assets/images/blog/blog-1.jpg" alt="Chalk drafting" class="w-100 h-100 object-fit-cover">
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="blog-details.html" class="d-block rounded-4 overflow-hidden shadow-sm transition-hover" style="height: 180px;">
+            <img src="assets/images/blog/blog-2.jpg" alt="Textile swatches" class="w-100 h-100 object-fit-cover">
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="blog-details.html" class="d-block rounded-4 overflow-hidden shadow-sm transition-hover" style="height: 180px;">
+            <img src="assets/images/blog/blog-3.jpg" alt="Bridal stitching" class="w-100 h-100 object-fit-cover">
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a href="blog-details.html" class="d-block rounded-4 overflow-hidden shadow-sm transition-hover" style="height: 180px;">
+            <img src="assets/images/blog/blog-4.jpg" alt="Hand pin fitting" class="w-100 h-100 object-fit-cover">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTAINER 6: CONSULTATION CTA BANNER ================= -->
+  <section class="section-padding text-center bg-dark-atelier text-white position-relative overflow-hidden">
+    <div class="container position-relative" style="z-index: 2;">
+      <span class="badge badge-gold mb-3">Atelier Consultation</span>
+      <h2 class="display-5 fw-bold font-editorial mb-3 text-white">Have a Sartorial Question or Custom Project?</h2>
+      <p class="text-light opacity-75 mx-auto mb-4" style="max-width: 600px;">
+        Speak directly with our master cutters and design team or book a complimentary 30-minute private fitting session.
+      </p>
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <button class="btn-custom btn-gold btn-custom-pill shadow-lg" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+          <i class="bi bi-calendar-check-fill"></i> Book Fitting Consultation
+        </button>
+        <a href="services.html" class="btn-custom btn-outline-light btn-custom-pill">
+          <i class="bi bi-grid-fill"></i> View All Services
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer-atelier">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+            <span class="brand-icon"><i class="bi bi-scissors"></i></span>
+            <span class="text-white" style="line-height: 1;">SARTORIA</span>
+          </a>
+          <p class="small text-muted mb-4">
+            Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about.html">About Studio</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="alterations.html">Alterations</a></li>
+            <li><a href="fabrics.html">Fabric Showcase</a></li>
+            <li><a href="turnaround-times.html">Turnaround Times</a></li>
+            <li><a href="pricing.html">Pricing & Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-services-col">
+          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
+            <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
+            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
+            <li><a href="services.html#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="services.html#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
+            <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading mb-3">Newsletter</h5>
+          <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
+              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+            </div>
+          </form>
+          <div class="mt-3 text-muted small">
+            <i class="bi bi-shield-check text-gold"></i> We respect your privacy. No spam.
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-3">
+        <div>
+          © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
+        </div>
+        <div class="d-flex gap-3">
+          <a href="documentation/index.html">Documentation</a>
+          <a href="admin/index.html">Admin Dashboard</a>
+          <a href="404.html">404 Demo</a>
+          <a href="coming-soon.html">Coming Soon</a>
+          <a href="maintenance.html">Maintenance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border-0 shadow-lg rounded-4 p-4">
+        <div class="modal-header border-0 pb-0">
+          <h4 class="modal-title h5">Book a Tailoring Appointment</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="appointmentForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Full Name *</label>
+                <input type="text" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Phone *</label>
+                <input type="tel" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Email *</label>
+                <input type="email" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Service *</label>
+                <select class="form-select form-select-custom" id="appointmentService" required>
+                  <option value="Bridal Wear">Bridal Wear Couture</option>
+                  <option value="Men's Bespoke Suit">Men's Bespoke Suit</option>
+                  <option value="Designer Blouse">Designer Blouse Stitching</option>
+                  <option value="Custom Dress">Custom Dress / Gown</option>
+                  <option value="Alterations">Alterations & Resizing</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Preferred Date *</label>
+                <input type="date" class="form-control form-control-custom" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label form-label-custom">Time Slot *</label>
+                <select class="form-select form-select-custom" required>
+                  <option>Morning (10:00 AM - 1:00 PM)</option>
+                  <option>Afternoon (1:00 PM - 4:30 PM)</option>
+                  <option>Evening (4:30 PM - 7:30 PM)</option>
+                </select>
+              </div>
+              <div class="col-12 text-end pt-2">
+                <button type="submit" class="btn-custom btn-gold btn-custom-pill">Schedule Appointment</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

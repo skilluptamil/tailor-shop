@@ -1,0 +1,403 @@
+/* ==========================================================================
+   SARTORIA ROYALE - Luxury Tailoring & Haute Couture Studio HTML5 Template
+   Responsive Stylesheet (responsive.css)
+   Based on 1920 × 1080 px Primary Reference Viewport
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Ultra-Wide & Full HD Desktops (1920px+ Reference Viewport)
+   ========================================================================== */
+@media (min-width: 1920px) {
+  .container, 
+  .container-xxl, 
+  .container-xl, 
+  .container-lg {
+    max-width: 1680px;
+  }
+
+  .hero-section-1 {
+    padding: 6.5rem 0 6rem;
+  }
+
+  .hero-section-2 {
+    padding: 7.5rem 0 6.5rem;
+  }
+
+  .hero-visual-wrapper .hero-main-img {
+    aspect-ratio: 16/9.5;
+    max-height: 580px;
+  }
+
+  .hero-editorial-img {
+    aspect-ratio: 4/5;
+    max-height: 640px;
+  }
+
+  .card-atelier {
+    padding: 2.25rem;
+  }
+
+  .pricing-card {
+    padding: 2.75rem 2.25rem;
+  }
+
+  .footer-atelier {
+    padding-top: 5.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* ==========================================================================
+   2. Large Widescreen Desktops (1600px – 1919.98px)
+   ========================================================================== */
+@media (min-width: 1600px) and (max-width: 1919.98px) {
+  .container, 
+  .container-xxl, 
+  .container-xl, 
+  .container-lg {
+    max-width: 1520px;
+  }
+
+  .hero-section-1 {
+    padding: 5.75rem 0 5.25rem;
+  }
+
+  .hero-visual-wrapper .hero-main-img {
+    aspect-ratio: 16/10;
+    max-height: 520px;
+  }
+}
+
+/* ==========================================================================
+   3. Standard Desktops & High-Res Laptops (1400px – 1599.98px)
+   ========================================================================== */
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  .container, 
+  .container-xxl, 
+  .container-xl, 
+  .container-lg {
+    max-width: 1340px;
+  }
+
+  .hero-section-1, .hero-section-2 {
+    padding: 5rem 0 4.5rem;
+  }
+}
+
+/* ==========================================================================
+   4. Medium Desktops & Standard Laptops (1200px – 1399.98px)
+   ========================================================================== */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container, 
+  .container-xxl, 
+  .container-xl, 
+  .container-lg {
+    max-width: 1160px;
+  }
+
+  .nav-link-custom {
+    padding: 0.5rem 0.65rem !important;
+    font-size: 0.9rem;
+  }
+
+  .btn-custom {
+    padding: 0.7rem 1.4rem;
+  }
+}
+
+/* ==========================================================================
+   5. Compact Laptops & Landscape Tablets (992px – 1199.98px)
+   ========================================================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .nav-link-custom {
+    padding: 0.45rem 0.5rem !important;
+    font-size: 0.875rem;
+  }
+
+  .btn-custom {
+    padding: 0.65rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .card-atelier {
+    padding: 1.5rem;
+  }
+
+  .hero-card-1 {
+    bottom: 10px;
+    left: -10px;
+  }
+
+  .hero-card-2 {
+    top: 15px;
+    right: -10px;
+  }
+}
+
+/* ==========================================================================
+   6. Tablets & Small Viewports (< 992px)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  /* Navigation Drawer */
+  .navbar-atelier {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-collapse {
+    background-color: var(--bg-surface);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-link-custom {
+    padding: 0.75rem 0.5rem !important;
+    border-bottom: 1px solid var(--border-color-light);
+  }
+
+  .nav-link-custom.active::after {
+    display: none;
+  }
+
+  /* Hero visual stacking */
+  .hero-visual-wrapper {
+    margin-top: 2.5rem;
+  }
+
+  .hero-floating-card {
+    position: static;
+    margin-top: 1rem;
+    animation: none;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .editorial-badge {
+    position: static;
+    margin: 1.5rem auto 0;
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Pricing Cards Scale Reset */
+  .pricing-card.featured {
+    transform: none;
+  }
+
+  /* Timeline for Tablets & Mobile */
+  .timeline-track::before {
+    left: 24px;
+    transform: none;
+  }
+
+  .timeline-col {
+    padding-left: 56px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .timeline-node {
+    left: 15px !important;
+    right: auto !important;
+  }
+
+  /* Admin Sidebar on Tablet/Mobile */
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -280px;
+    z-index: 1050;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .admin-sidebar.show {
+    left: 0;
+  }
+
+  .admin-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    backdrop-filter: blur(4px);
+  }
+}
+
+/* ==========================================================================
+   7. Smartphones & Phablets (< 768px)
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .topbar {
+    display: none; /* Hide topbar on mobile for ultra-clean header */
+  }
+
+  /* Counter Strip Grid 2x2 */
+  .counter-bar {
+    padding: 1.75rem 0;
+  }
+
+  .counter-item {
+    border-bottom: 1px solid var(--border-color-light);
+    padding: 0.85rem 0.5rem;
+  }
+
+  .counter-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .counter-number {
+    font-size: 2.15rem;
+  }
+
+  .card-atelier {
+    padding: 1.35rem;
+  }
+
+  /* Alteration Cards */
+  .alteration-row-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem;
+  }
+
+  .alteration-row-card .btn-custom,
+  .alteration-row-card .btn {
+    width: 100%;
+  }
+
+  /* Buttons */
+  .btn-custom {
+    padding: 0.65rem 1.35rem;
+    font-size: 0.875rem;
+  }
+
+  /* Responsive Table Cards on Mobile */
+  .table-responsive-cards table, 
+  .table-responsive-cards thead, 
+  .table-responsive-cards tbody, 
+  .table-responsive-cards th, 
+  .table-responsive-cards td, 
+  .table-responsive-cards tr {
+    display: block;
+  }
+
+  .table-responsive-cards thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-responsive-cards tr {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+
+  .table-responsive-cards td {
+    border: none;
+    position: relative;
+    padding: 0.5rem 0 0.5rem 45%;
+    text-align: right;
+  }
+
+  .table-responsive-cards td::before {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-heading);
+    content: attr(data-label);
+  }
+
+  /* Footer adjustments */
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .footer-bottom .d-flex {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   8. Compact Smartphones (< 480px: iPhone SE, 390px, 375px)
+   ========================================================================== */
+@media (max-width: 479.98px) {
+  .brand-logo {
+    font-size: 1.25rem;
+  }
+
+  .brand-logo .brand-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .btn-custom {
+    padding: 0.6rem 1.15rem;
+    font-size: 0.8125rem;
+  }
+
+  .btn-custom-pill {
+    width: 100%;
+  }
+
+  /* Filter buttons */
+  .filter-btn-group {
+    gap: 0.35rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  /* Modals */
+  .modal-dialog {
+    margin: 0.75rem;
+  }
+
+  .modal-content {
+    border-radius: var(--radius-md) !important;
+  }
+
+  /* Auth split cards */
+  .auth-split-card {
+    border-radius: var(--radius-md);
+  }
+
+  /* Social icons */
+  .social-icon-link {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================================
+   9. Safe Screen Overflow Prevention Across All Devices
+   ========================================================================== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+img, video, iframe, embed, object {
+  max-width: 100%;
+  height: auto;
+}
