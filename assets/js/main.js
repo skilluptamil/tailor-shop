@@ -712,4 +712,287 @@ document.addEventListener('DOMContentLoaded', () => {
       return new bootstrap.Tooltip(tooltipTriggerEl);
     });
   }
+
+  /* --------------------------------------------------------------------------
+     11. Strict Form Validation Engine (Contact, Appointment, Inquiry)
+  -------------------------------------------------------------------------- */
+  function initStrictFormValidation() {
+    const contactForm = document.getElementById('contactForm');
+    const appointmentForms = document.querySelectorAll('#appointmentForm');
+
+    // Validation patterns & rules
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const nameRegex = /^[a-zA-Z\s]{2,60}$/;
+
+    // Helper: validate a single input or select element
+    function validateElement(field, isSubmitCheck = false) {
+      if (!field) return { isValid: true, message: '' };
+
+      const value = field.value.trim();
+      const type = field.type || field.tagName.toLowerCase();
+      const id = field.id || '';
+      const isRequired = field.hasAttribute('required');
+
+      // 1. Name validation
+      if (id.includes('Name') || field.name === 'name' || id === 'appName') {
+        if (!value) {
+          return { isValid: false, message: 'Please enter your name.' };
+        }
+        if (!nameRegex.test(value)) {
+          return { isValid: false, message: 'Name must contain letters (A–Z) and spaces only.' };
+        }
+        return { isValid: true, message: 'Looks good!' };
+      }
+
+      // 2. Email validation
+      if (type === 'email' || id.includes('Email') || field.name === 'email') {
+        if (!value) {
+          return { isValid: false, message: 'Please enter your email address.' };
+        }
+        if (!value.includes('@')) {
+          return { isValid: false, message: "Email must include an '@' symbol." };
+        }
+        const parts = value.split('@');
+        if (parts.length !== 2 || !parts[0] || !parts[1]) {
+          return { isValid: false, message: 'Please enter a valid username and domain.' };
+        }
+        if (!parts[1].includes('.')) {
+          return { isValid: false, message: "Please include a top-level domain (e.g., '.com', '.in')." };
+        }
+        const domainParts = parts[1].split('.');
+        const tld = domainParts[domainParts.length - 1];
+        if (!tld || tld.length < 2 || !/^[a-zA-Z]+$/.test(tld)) {
+          return { isValid: false, message: 'Please provide a valid domain extension (e.g., .com, .in, .org).' };
+        }
+        if (!emailRegex.test(value)) {
+          return { isValid: false, message: 'Please enter a valid email address (e.g., name@example.com).' };
+        }
+        return { isValid: true, message: 'Valid email address!' };
+      }
+
+      // 3. Phone validation
+      if (type === 'tel' || id.includes('Phone') || field.name === 'phone') {
+        const digits = value.replace(/\D/g, '');
+        if (isRequired && !value) {
+          return { isValid: false, message: 'Please enter your phone number.' };
+        }
+        if (value && digits.length < 10) {
+          return { isValid: false, message: 'Phone number must be at least 10 digits.' };
+        }
+        if (value && digits.length > 15) {
+          return { isValid: false, message: 'Phone number cannot exceed 15 digits.' };
+        }
+        if (!isRequired && !value) {
+          return { isValid: true, message: '' };
+        }
+        return { isValid: true, message: 'Valid phone number!' };
+      }
+
+      // 4. Select dropdown validation
+      if (field.tagName.toLowerCase() === 'select') {
+        if (isRequired && (!value || value === '')) {
+          return { isValid: false, message: 'Please select an option from the list.' };
+        }
+        return { isValid: true, message: 'Option selected!' };
+      }
+
+      // 5. Textarea / Message validation
+      if (field.tagName.toLowerCase() === 'textarea') {
+        if (isRequired && !value) {
+          return { isValid: false, message: 'Please enter your message.' };
+        }
+        if (isRequired && value.length < 10) {
+          return { isValid: false, message: 'Please enter at least 10 characters so we can understand your request.' };
+        }
+        if (!isRequired && !value) {
+          return { isValid: true, message: '' };
+        }
+        return { isValid: true, message: 'Message looks complete!' };
+      }
+
+      // 6. Generic required input
+      if (isRequired && !value) {
+        return { isValid: false, message: 'This field is required.' };
+      }
+
+      return { isValid: true, message: 'Looks good!' };
+    }
+
+    // Helper: update field UI state
+    function applyValidationUI(field, result, triggerFeedback = true) {
+      const parent = field.closest('.col-md-6, .col-12, .mb-3, div');
+      let feedbackEl = parent ? parent.querySelector('.invalid-feedback') : null;
+
+      if (!result.isValid) {
+        field.classList.remove('is-valid');
+        field.classList.add('is-invalid');
+        if (feedbackEl && triggerFeedback) {
+          feedbackEl.textContent = result.message;
+        }
+      } else {
+        field.classList.remove('is-invalid');
+        // Only apply is-valid if field has non-empty value
+        if (field.value.trim() !== '') {
+          field.classList.add('is-valid');
+        } else {
+          field.classList.remove('is-valid');
+        }
+      }
+    }
+
+    // Attach real-time character blocking & validation listeners to a form
+    function setupFormValidation(form) {
+      if (!form) return;
+
+      const inputs = form.querySelectorAll('input, select, textarea');
+
+      inputs.forEach(input => {
+        const id = input.id || '';
+        const type = input.type || input.tagName.toLowerCase();
+
+        // 1. Real-time Name Sanitization (A-Z and spaces ONLY)
+        if (id.includes('Name') || input.name === 'name' || id === 'appName') {
+          input.addEventListener('input', function () {
+            const cleanVal = this.value.replace(/[^a-zA-Z\s]/g, '');
+            if (this.value !== cleanVal) {
+              this.value = cleanVal;
+            }
+            if (this.classList.contains('is-invalid')) {
+              const res = validateElement(this);
+              applyValidationUI(this, res);
+            }
+          });
+        }
+
+        // 2. Real-time Phone Sanitization (Digits and optional leading + ONLY)
+        if (type === 'tel' || id.includes('Phone') || input.name === 'phone') {
+          input.addEventListener('input', function () {
+            let val = this.value;
+            const hasLeadingPlus = val.startsWith('+');
+            val = val.replace(/[^\d]/g, '');
+            if (hasLeadingPlus) val = '+' + val;
+            if (this.value !== val) {
+              this.value = val;
+            }
+            if (this.classList.contains('is-invalid')) {
+              const res = validateElement(this);
+              applyValidationUI(this, res);
+            }
+          });
+        }
+
+        // 3. Email, Select, Textarea real-time error recovery on input/change
+        input.addEventListener('input', function () {
+          if (this.classList.contains('is-invalid')) {
+            const res = validateElement(this);
+            applyValidationUI(this, res);
+          }
+        });
+
+        if (input.tagName.toLowerCase() === 'select') {
+          input.addEventListener('change', function () {
+            const res = validateElement(this);
+            applyValidationUI(this, res);
+          });
+        }
+
+        // 4. Strict Validation on Blur (when leaving the field)
+        input.addEventListener('blur', function () {
+          const res = validateElement(this);
+          applyValidationUI(this, res);
+        });
+      });
+
+      // 5. Form Submit Handler
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        let isFormValid = true;
+        let firstInvalidField = null;
+
+        inputs.forEach(input => {
+          const res = validateElement(input, true);
+          applyValidationUI(input, res, true);
+          if (!res.isValid) {
+            isFormValid = false;
+            if (!firstInvalidField) {
+              firstInvalidField = input;
+            }
+          }
+        });
+
+        if (!isFormValid) {
+          if (firstInvalidField) {
+            firstInvalidField.focus();
+          }
+          return;
+        }
+
+        // Handle successful submission
+        if (form.id === 'contactForm') {
+          const successAlert = document.getElementById('contactSuccessAlert');
+          const submitBtn = document.getElementById('contactSubmitBtn');
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Sending...';
+          }
+
+          setTimeout(() => {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="bi bi-check-circle me-1"></i> Sent!';
+            }
+            if (successAlert) {
+              successAlert.style.display = 'block';
+              successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            form.reset();
+            inputs.forEach(i => i.classList.remove('is-valid', 'is-invalid'));
+
+            setTimeout(() => {
+              if (submitBtn) {
+                submitBtn.innerHTML = '<i class="bi bi-send-fill me-1"></i> Send Inquiry';
+              }
+              if (successAlert) {
+                successAlert.style.display = 'none';
+              }
+            }, 6000);
+          }, 800);
+        } else {
+          // Generic appointment/inquiry form submission
+          const submitBtn = form.querySelector('button[type="submit"]');
+          if (submitBtn) {
+            const originalHTML = submitBtn.innerHTML;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="bi bi-check-circle-fill me-1"></i> Booked Successfully!';
+            setTimeout(() => {
+              form.reset();
+              inputs.forEach(i => i.classList.remove('is-valid', 'is-invalid'));
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalHTML;
+
+              // If inside a bootstrap modal, close it
+              const modalEl = form.closest('.modal');
+              if (modalEl && window.bootstrap && bootstrap.Modal) {
+                const modalInstance = bootstrap.Modal.getInstance(modalEl);
+                if (modalInstance) modalInstance.hide();
+              }
+            }, 1500);
+          }
+        }
+      });
+    }
+
+    // Initialize on contact form and all appointment forms
+    if (contactForm) setupFormValidation(contactForm);
+    appointmentForms.forEach(form => setupFormValidation(form));
+
+    // Also look for other forms with class needs-validation
+    document.querySelectorAll('form.needs-validation').forEach(f => {
+      if (f !== contactForm) setupFormValidation(f);
+    });
+  }
+
+  initStrictFormValidation();
 });

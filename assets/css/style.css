@@ -1608,3 +1608,98 @@ img {
   box-shadow: var(--shadow-lg) !important;
   border-color: var(--color-secondary) !important;
 }
+
+/* ==========================================
+   Strict Form Controls & Validation States
+   ========================================== */
+.form-label-custom {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-heading);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.form-control-custom,
+.form-select-custom {
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-color);
+  background-color: var(--bg-surface);
+  color: var(--text-heading);
+  padding: 0.75rem 1rem;
+  font-size: 0.9375rem;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast);
+}
+
+.form-control-custom:focus,
+.form-select-custom:focus {
+  border-color: var(--color-secondary);
+  background-color: var(--bg-surface);
+  color: var(--text-heading);
+  box-shadow: 0 0 0 3.5px rgba(197, 168, 128, 0.25);
+  outline: none;
+}
+
+/* Invalid State (Strict validation failure) */
+.form-control-custom.is-invalid,
+.form-select-custom.is-invalid {
+  border-color: #DC3545 !important;
+  background-color: rgba(220, 53, 69, 0.02) !important;
+  box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.15) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6v2.4M5.8 8.2h.4'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right calc(0.375em + 0.25rem) center !important;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) !important;
+  padding-right: calc(1.5em + 0.75rem) !important;
+}
+
+/* Valid State (Strict 100% verified) */
+.form-control-custom.is-valid,
+.form-select-custom.is-valid {
+  border-color: #198754 !important;
+  background-color: rgba(25, 135, 84, 0.02) !important;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.12) !important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e") !important;
+  background-repeat: no-repeat !important;
+  background-position: right calc(0.375em + 0.25rem) center !important;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem) !important;
+  padding-right: calc(1.5em + 0.75rem) !important;
+}
+
+/* RTL Form Indicators */
+[dir="rtl"] .form-control-custom.is-invalid,
+[dir="rtl"] .form-select-custom.is-invalid,
+[dir="rtl"] .form-control-custom.is-valid,
+[dir="rtl"] .form-select-custom.is-valid {
+  background-position: left calc(0.375em + 0.25rem) center !important;
+  padding-left: calc(1.5em + 0.75rem) !important;
+  padding-right: 1rem !important;
+}
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #DC3545;
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.valid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #198754;
+}
+
+.is-valid ~ .valid-feedback {
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}

@@ -142,34 +142,67 @@
             <h3 class="h4 mb-3">Send a Message to the Master Tailor</h3>
             <form id="contactForm" class="needs-validation" novalidate>
               <div class="row g-3">
+                <!-- Name Field -->
                 <div class="col-md-6">
-                  <label class="form-label form-label-custom">Your Name *</label>
-                  <input type="text" class="form-control form-control-custom" placeholder="Eleanor Vance" required>
+                  <label for="contactName" class="form-label form-label-custom">Your Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control form-control-custom" id="contactName" name="name" placeholder="e.g. Eleanor Vance" required autocomplete="name">
+                  <div class="invalid-feedback" id="contactNameFeedback">Please enter a valid full name (letters and spaces only).</div>
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
+
+                <!-- Email Field -->
                 <div class="col-md-6">
-                  <label class="form-label form-label-custom">Email Address *</label>
-                  <input type="email" class="form-control form-control-custom" placeholder="name@example.com" required>
+                  <label for="contactEmail" class="form-label form-label-custom">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control form-control-custom" id="contactEmail" name="email" placeholder="name@example.com" required autocomplete="email">
+                  <div class="invalid-feedback" id="contactEmailFeedback">Please enter a valid email address (e.g. name@example.com).</div>
+                  <div class="valid-feedback">Valid email address!</div>
                 </div>
+
+                <!-- Phone Field -->
                 <div class="col-md-6">
-                  <label class="form-label form-label-custom">Phone Number</label>
-                  <input type="tel" class="form-control form-control-custom" placeholder="+1 (555) 000-0000">
+                  <label for="contactPhone" class="form-label form-label-custom">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control form-control-custom" id="contactPhone" name="phone" placeholder="e.g. +1 555 0199 or 9876543210" required autocomplete="tel">
+                  <div class="invalid-feedback" id="contactPhoneFeedback">Please enter a valid phone number (digits only, at least 10 numbers).</div>
+                  <div class="valid-feedback">Valid phone number!</div>
                 </div>
+
+                <!-- Inquiry Type Field -->
                 <div class="col-md-6">
-                  <label class="form-label form-label-custom">Inquiry Type *</label>
-                  <select class="form-select form-select-custom" required>
+                  <label for="contactInquiryType" class="form-label form-label-custom">Inquiry Type <span class="text-danger">*</span></label>
+                  <select class="form-select form-select-custom" id="contactInquiryType" name="inquiryType" required>
+                    <option value="" selected disabled>Select an Inquiry Type *</option>
                     <option value="Bridal">Bridal Couture & Trousseau</option>
                     <option value="Suits">Men's Bespoke Suiting</option>
                     <option value="Alteration">Express Alteration</option>
                     <option value="Fabrics">Fabric Sourcing Consultation</option>
                     <option value="General">General Inquiry</option>
                   </select>
+                  <div class="invalid-feedback" id="contactInquiryFeedback">Please select an inquiry type.</div>
+                  <div class="valid-feedback">Inquiry type selected!</div>
                 </div>
+
+                <!-- Message Field -->
                 <div class="col-12">
-                  <label class="form-label form-label-custom">Your Message *</label>
-                  <textarea class="form-control form-control-custom" rows="4" placeholder="Tell us how we can help you with your custom garment..." required></textarea>
+                  <label for="contactMessage" class="form-label form-label-custom">Your Message <span class="text-danger">*</span></label>
+                  <textarea class="form-control form-control-custom" id="contactMessage" name="message" rows="4" placeholder="Tell us how we can help you with your custom garment..." required></textarea>
+                  <div class="invalid-feedback" id="contactMessageFeedback">Please enter your message (at least 10 characters).</div>
+                  <div class="valid-feedback">Message looks complete!</div>
                 </div>
+
+                <!-- Submission status alert -->
+                <div class="col-12" id="contactSuccessAlert" style="display: none;">
+                  <div class="alert alert-success d-flex align-items-center rounded-3 p-3 mb-0" role="alert">
+                    <i class="bi bi-check-circle-fill fs-4 me-3 text-success"></i>
+                    <div>
+                      <h6 class="alert-heading fw-bold mb-1">Inquiry Sent Successfully!</h6>
+                      <p class="small mb-0">Thank you for reaching out. Our master tailor will review your request and contact you within 2 to 4 business hours.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
                 <div class="col-12 text-end">
-                  <button type="submit" class="btn-custom btn-gold btn-custom-pill">
+                  <button type="submit" id="contactSubmitBtn" class="btn-custom btn-gold btn-custom-pill">
                     <i class="bi bi-send-fill me-1"></i> Send Inquiry
                   </button>
                 </div>
