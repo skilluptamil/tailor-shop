@@ -145,7 +145,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -155,7 +155,7 @@ body {
   line-height: 1.7;
   font-size: 1rem;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: clip;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -569,14 +569,15 @@ img {
 
 .navbar-atelier {
   background-color: var(--bg-glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-color);
-  transition: all var(--transition-smooth);
-  position: sticky;
-  top: 0;
-  z-index: 1040;
+  transition: padding var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1050 !important;
   padding: 0.85rem 0;
+  width: 100%;
 }
 
 .navbar-atelier.scrolled {

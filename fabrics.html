@@ -30,7 +30,7 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-atelier">
+  <nav class="navbar navbar-expand-lg navbar-atelier sticky-top">
     <div class="container">
       <a class="navbar-brand brand-logo" href="index.html">
         <span class="brand-icon"><i class="bi bi-scissors"></i></span>
@@ -99,22 +99,22 @@
     <div class="container">
       <!-- Filter Buttons -->
       <div class="filter-btn-group mb-5">
-        <button class="filter-btn fabric-filter-btn active" data-filter="all">All Fabrics</button>
-        <button class="filter-btn fabric-filter-btn" data-filter="silk">Mulberry Silk</button>
+        <button class="filter-btn fabric-filter-btn active" data-filter="all">All Fabrics (12)</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="silk">Mulberry Silk & Lace</button>
         <button class="filter-btn fabric-filter-btn" data-filter="linen">Irish Linen</button>
-        <button class="filter-btn fabric-filter-btn" data-filter="wool">Merino Wool</button>
-        <button class="filter-btn fabric-filter-btn" data-filter="cotton">Egyptian Cotton</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="wool">Merino Wool & Cashmere</button>
+        <button class="filter-btn fabric-filter-btn" data-filter="cotton">Egyptian & Twill Cotton</button>
         <button class="filter-btn fabric-filter-btn" data-filter="velvet">Velvet & Brocade</button>
       </div>
 
       <div class="row g-4">
-        <!-- Fabric 1 -->
+        <!-- Fabric 1: Mulberry Silk -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="silk">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-silk.jpg" alt="Italian Mulberry Silk Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-silk.jpg" alt="Italian 35 Momme Mulberry Silk Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-gold">Pure Silk</span>
-              <span class="small text-muted">Weight: 140 GSM</span>
+              <span class="small text-muted">Weight: 140 GSM (35 Momme)</span>
             </div>
             <h4 class="h5 mb-1">Italian 35 Momme Mulberry Silk</h4>
             <p class="text-muted small mb-3">Hypoallergenic natural filament silk with buttery softness, fluid drape, and natural lustrous sheen. Ideal for bridal blouses, saree borders, and gala evening gowns.</p>
@@ -125,10 +125,10 @@
           </div>
         </div>
 
-        <!-- Fabric 2 -->
+        <!-- Fabric 2: Irish Linen -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="linen">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-linen.jpg" alt="Pure Irish Flax Linen" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-linen.jpg" alt="Pure Irish Flax Linen Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-gold">Flax Linen</span>
               <span class="small text-muted">Weight: 220 GSM</span>
@@ -142,10 +142,10 @@
           </div>
         </div>
 
-        <!-- Fabric 3 -->
+        <!-- Fabric 3: Merino Wool -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="wool">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-wool.jpg" alt="Super 150s Merino Wool" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-wool.jpg" alt="Super 150s Australian Merino Wool Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-gold">Worsted Wool</span>
               <span class="small text-muted">Weight: 280 GSM</span>
@@ -159,16 +159,16 @@
           </div>
         </div>
 
-        <!-- Fabric 4 -->
+        <!-- Fabric 4: Egyptian Cotton -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="cotton">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-cotton.jpg" alt="Egyptian Giza Cotton" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-cotton.jpg" alt="Egyptian Giza 88 Cotton Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-gold">Long Staple Cotton</span>
               <span class="small text-muted">Weight: 120 GSM</span>
             </div>
             <h4 class="h5 mb-1">Egyptian Giza 88 Extra-Long Staple</h4>
-            <p class="text-muted small mb-3">Handpicked along the Nile Delta, offering silky smoothness and extraordinary durability. Tailored into luxurious dress shirts, kurtas, and salwar linings.</p>
+            <p class="text-muted small mb-3">Handpicked along the Nile Delta, offering silky smoothness and extraordinary durability. Tailored into luxurious bespoke dress shirts, resort tunics, and fine garment linings.</p>
             <div class="d-flex justify-content-between align-items-center pt-2 border-top">
               <span class="text-gold fw-bold">From $35 / meter</span>
               <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
@@ -176,16 +176,16 @@
           </div>
         </div>
 
-        <!-- Fabric 5 -->
+        <!-- Fabric 5: Royal Micro Velvet -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="velvet">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-velvet.jpg" alt="Royal Micro Velvet" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-velvet.jpg" alt="Royal Micro Plush Velvet Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-gold">Micro Velvet</span>
               <span class="small text-muted">Weight: 340 GSM</span>
             </div>
             <h4 class="h5 mb-1">Royal Micro Plush Velvet</h4>
-            <p class="text-muted small mb-3">Dense, light-absorbing pile with rich depth of color and supreme softness. Used for designer blouse backdrops, evening jackets, and royal sherwanis.</p>
+            <p class="text-muted small mb-3">Dense, light-absorbing emerald pile with rich depth of color and supreme softness. Used for designer blouse backdrops, evening jackets, and royal sherwanis.</p>
             <div class="d-flex justify-content-between align-items-center pt-2 border-top">
               <span class="text-gold fw-bold">From $55 / meter</span>
               <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
@@ -193,15 +193,15 @@
           </div>
         </div>
 
-        <!-- Fabric 6 -->
+        <!-- Fabric 6: Banarasi Brocade -->
         <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="velvet">
           <div class="fabric-card p-4">
-            <img src="assets/images/fabrics/fabric-brocade.jpg" alt="Heritage Banarasi Brocade" class="fabric-swatch-img rounded-3 mb-3">
+            <img src="assets/images/fabrics/fabric-brocade.jpg" alt="Heritage Banarasi Gold Zari Brocade Swatch" class="fabric-swatch-img rounded-3 mb-3">
             <div class="d-flex justify-content-between align-items-center mb-2">
               <span class="badge badge-burgundy">Handloom Jacquard</span>
               <span class="small text-muted">Weight: 310 GSM</span>
             </div>
-            <h4 class="h5 mb-1">Heritage Banarasi Gold Brocade</h4>
+            <h4 class="h5 mb-1">Heritage Banarasi Gold Zari Brocade</h4>
             <p class="text-muted small mb-3">Authentic handloom zari weaving featuring floral kadwa patterns and real metallic threads. Unsurpassed magnificence for bridal lehengas and festive dupattas.</p>
             <div class="d-flex justify-content-between align-items-center pt-2 border-top">
               <span class="text-gold fw-bold">From $120 / meter</span>
@@ -209,22 +209,156 @@
             </div>
           </div>
         </div>
+
+        <!-- Fabric 7: Pure Mongolian Cashmere -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="wool">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-cashmere.jpg" alt="Pure Mongolian Brushed Cashmere Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Pure Cashmere</span>
+              <span class="small text-muted">Weight: 450 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Pure Mongolian Brushed Cashmere</h4>
+            <p class="text-muted small mb-3">Downy undercoat fibers from high-altitude Mongolian goats combed into feather-soft, ultra-insulating luxury fleece. Ideal for winter overcoats, bespoke capes, and heirloom blazers.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $150 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 8: French Chantilly Lace -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="silk">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-lace.jpg" alt="French Chantilly Couture Lace Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Couture Lace</span>
+              <span class="small text-muted">Weight: 90 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">French Chantilly Couture Lace</h4>
+            <p class="text-muted small mb-3">Delicate scalloped eyelash edging and intricate floral filigree over sheer silk ground. Hand-stitched onto bridal sleeves, bodice overlays, and couture evening gowns.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $85 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 9: Artisanal Tussar Raw Silk -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="silk">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-raw-silk.jpg" alt="Artisanal Tussar Raw Silk Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Raw Slub Silk</span>
+              <span class="small text-muted">Weight: 180 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Artisanal Tussar Raw Silk</h4>
+            <p class="text-muted small mb-3">Hand-reeled wild silk with distinct golden luster and tactile organic slub texture. Breathable, structured, and ideal for bespoke waistcoats, blazers, and evening wear.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $50 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 10: British Herringbone Tweed -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="wool">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-tweed.jpg" alt="Heritage British Herringbone Tweed Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Pure Virgin Wool</span>
+              <span class="small text-muted">Weight: 360 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">Heritage British Herringbone Tweed</h4>
+            <p class="text-muted small mb-3">Traditional chevron herringbone weave in earthy heathered tones. Offers weather-resistant warmth, rich texture, and enduring British tailoring charm for blazers and coats.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $75 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 11: Sea Island Cotton Twill -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="cotton">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-twill-cotton.jpg" alt="West Indian Sea Island Cotton Twill Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Sea Island Cotton</span>
+              <span class="small text-muted">Weight: 135 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">West Indian Sea Island Cotton Twill</h4>
+            <p class="text-muted small mb-3">The world's rarest cotton with cashmere-like softness and silky twill diagonal weave. Designed for ultra-luxurious bespoke shirts and soft-collar resort wear.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $60 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fabric 12: French Floral Silk Jacquard -->
+        <div class="col-md-6 col-lg-4 fabric-grid-item" data-category="velvet">
+          <div class="fabric-card p-4">
+            <img src="assets/images/fabrics/fabric-jacquard.jpg" alt="French Floral Silk Damask Jacquard Swatch" class="fabric-swatch-img rounded-3 mb-3">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <span class="badge badge-gold">Silk Jacquard</span>
+              <span class="small text-muted">Weight: 260 GSM</span>
+            </div>
+            <h4 class="h5 mb-1">French Floral Silk Damask Jacquard</h4>
+            <p class="text-muted small mb-3">Ornate raised relief damask patterns woven with royal navy and metallic gold fibers. Perfect for structured ceremonial waistcoats, regal gowns, and bespoke tuxedos.</p>
+            <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+              <span class="text-gold fw-bold">From $110 / meter</span>
+              <button class="btn btn-sm btn-outline-atelier rounded-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">Request Swatch</button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Fabric Care Guide Section -->
-      <div class="card bg-sand border-0 rounded-4 p-4 p-md-5 mt-5">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-7">
-            <span class="badge badge-gold mb-2">Fabric Preservation</span>
-            <h3 class="h3 mb-3">Caring for Bespoke Natural Textiles</h3>
-            <p class="text-muted mb-0">
-              Natural fibers like pure silk, cashmere, and wool need proper care. Always hang suits on contoured cedar hangers, steam silk gently, and dry clean with eco-friendly solvents to preserve fabric tensile strength for decades.
-            </p>
+      <!-- Fabric Sourcing & Preservation Guide Section -->
+      <div class="card bg-sand border-0 rounded-4 overflow-hidden mt-5 shadow-sm">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-5">
+            <img src="assets/images/fabrics/fabric-care.jpg" alt="Master Tailor Curating Luxury Fabric Swatches in Atelier" class="w-100 h-100 object-fit-cover" style="min-height: 320px;" loading="lazy">
           </div>
-          <div class="col-lg-5 text-lg-end">
-            <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
-              <i class="bi bi-calendar-check"></i> Book Studio Sourcing Session
-            </button>
+          <div class="col-lg-7 p-4 p-md-5">
+            <span class="badge badge-gold mb-2"><i class="bi bi-shield-check me-1"></i> Fabric Curation & Preservation</span>
+            <h3 class="h3 mb-3">The Art of Natural Textile Longevity</h3>
+            <p class="text-muted mb-3">
+              Every natural fiber—from pure silk and Giza cotton to Australian Merino wool and Mongolian cashmere—possesses a living cellular structure. We provide bespoke fabric care advisory with every garment to ensure structural integrity and vibrancy across generations.
+            </p>
+            <div class="row g-3 mb-4">
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-gold"></i>
+                  <span class="small fw-semibold">100% Certified Natural Origins</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-gold"></i>
+                  <span class="small fw-semibold">Cedar Hanger Conditioning</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-gold"></i>
+                  <span class="small fw-semibold">Organic Eco-Solvent Care</span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-gold"></i>
+                  <span class="small fw-semibold">Custom Swatch Packs by Mail</span>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+                <i class="bi bi-calendar-check"></i> Book Studio Sourcing Session
+              </button>
+              <button class="btn-custom btn-outline-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#swatchModal">
+                <i class="bi bi-box-seam"></i> Request Swatch Box
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -269,7 +403,7 @@
             <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
             <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
             <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
-            <li><a href="services.html#service-sherwani" data-service="sherwani">Salwar & Kurta Tailoring</a></li>
+            <li><a href="services.html#service-shirts" data-service="shirts">Bespoke Shirts & Trousers</a></li>
             <li><a href="services.html#service-dresses" data-service="dresses">Evening Gowns & Dresses</a></li>
             <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
           </ul>

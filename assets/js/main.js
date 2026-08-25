@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'bridal': 'bridal',
     'suits': 'men',
     'blouse': 'women',
-    'sherwani': 'men',
+    'shirts': 'men',
     'dresses': 'women',
     'alterations': 'alterations'
   };
@@ -216,16 +216,16 @@ document.addEventListener('DOMContentLoaded', () => {
       desc2: "Features hand-pleated bodices, invisible side zips, luxury inner boning, and bespoke train lengths.",
       buttonText: "Book Gown Fitting"
     },
-    'sherwani': {
-      title: "Royal Sherwani & Silk Kurtas",
-      badge: "Men's Traditional Couture",
-      price: "$179",
-      rating: "4.98 / 5 from 180+ reviews",
-      image: "assets/images/services/service-kurta.jpg",
-      subheading: "Regal Heritage Embroidery & Mandarin Collars",
-      desc1: "Exquisite hand-embroidered groom sherwanis, bandhgalas, and pure raw silk kurtas tailored with rich zari embroidery, handcrafted metallic buttons, and matching churidar trousers.",
-      desc2: "Engineered with tailored shoulder pads and breathable silk-blend inner linings for majestic comfort throughout celebratory functions.",
-      buttonText: "Book Sherwani Fitting"
+    'shirts': {
+      title: "Bespoke Shirts & Tailored Trousers",
+      badge: "Menswear Craftsmanship",
+      price: "$65",
+      rating: "4.98 / 5 from 230+ reviews",
+      image: "assets/images/fabrics/fabric-twill-cotton.jpg",
+      subheading: "Single-Needle Stitching & Mother-of-Pearl Buttons",
+      desc1: "Custom dress shirts and tailored trousers drafted to individual measurements. Featuring split yokes, hand-set collars, Australian mother-of-pearl buttons, and English side-tab waist adjusters.",
+      desc2: "Tailored with premium 2-ply Egyptian Giza cottons and Irish flax linens for unexcelled all-day comfort and crisp sartorial lines.",
+      buttonText: "Book Shirt & Trouser Fitting"
     },
     'alterations': {
       title: "Express 24h Alterations & Restorations",
@@ -577,8 +577,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const filter = this.getAttribute('data-filter');
 
         fabricCards.forEach(card => {
-          const cat = card.getAttribute('data-category');
-          if (filter === 'all' || cat === filter) {
+          const cat = (card.getAttribute('data-category') || '').trim();
+          const categories = cat.split(/\s+/);
+          if (filter === 'all' || categories.includes(filter)) {
             card.style.display = 'block';
           } else {
             card.style.display = 'none';

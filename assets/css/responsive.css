@@ -394,7 +394,7 @@
    ========================================================================== */
 html, body {
   max-width: 100%;
-  overflow-x: hidden !important;
+  overflow-x: clip !important;
 }
 
 img, video, iframe, embed, object {
