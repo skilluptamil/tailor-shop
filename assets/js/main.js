@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'suits': 'men',
     'blouse': 'women',
     'shirts': 'men',
-    'dresses': 'women',
+    'blazers': 'men',
     'alterations': 'alterations'
   };
 
@@ -205,16 +205,16 @@ document.addEventListener('DOMContentLoaded', () => {
       desc2: "Choose from sheer illusion necklines, boat necks, scalloped edges, and custom piping tailored with genuine silk linings.",
       buttonText: "Book Blouse Fitting"
     },
-    'dresses': {
-      title: "Custom Evening Gowns & Dresses",
-      badge: "Women's Haute Couture",
-      price: "$119",
-      rating: "4.96 / 5 from 210+ reviews",
-      image: "assets/images/services/service-dress.jpg",
-      subheading: "Red Carpet Silhouettes & Cocktail Gowns",
-      desc1: "From fluid bias-cut silk satin gowns to structured corset cocktail dresses, our custom gown studio crafts showstopping evening wear tailored to your exact anatomical proportions.",
-      desc2: "Features hand-pleated bodices, invisible side zips, luxury inner boning, and bespoke train lengths.",
-      buttonText: "Book Gown Fitting"
+    'blazers': {
+      title: "Luxury Blazers & Overcoats",
+      badge: "Outerwear Haute Couture",
+      price: "$159",
+      rating: "4.97 / 5 from 195+ reviews",
+      image: "assets/images/fabrics/fabric-tweed.jpg",
+      subheading: "Structured Wool Overcoats & Double-Breasted Blazers",
+      desc1: "Engineered for supreme insulation and architectural silhouette structure. Hand-cut from Scottish herringbone tweeds, Italian melton wools, and Mongolian cashmeres.",
+      desc2: "Features hand-padded lapels, horn buttons, bemberg cupro linings, and reinforced shoulder constructions for an immaculate drape.",
+      buttonText: "Book Outerwear Fitting"
     },
     'shirts': {
       title: "Bespoke Shirts & Tailored Trousers",

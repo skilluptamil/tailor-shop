@@ -262,6 +262,8 @@ img {
 .text-gold { color: var(--color-secondary) !important; }
 .text-burgundy { color: var(--color-accent-burgundy) !important; }
 .text-muted-custom { color: var(--text-muted) !important; }
+.text-heading { color: var(--text-heading) !important; }
+.text-main { color: var(--text-main) !important; }
 .bg-sand { background-color: var(--bg-surface-alt) !important; }
 .bg-surface { background-color: var(--bg-surface) !important; }
 .bg-dark-atelier { background-color: var(--color-primary) !important; color: #FAF8F5; }
@@ -1446,25 +1448,25 @@ img {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.07);
-  color: #EDE7DE !important;
+  background: var(--bg-surface-alt);
+  color: var(--text-heading) !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all var(--transition-fast);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--border-color);
   text-decoration: none;
   font-size: 1.05rem;
 }
 .social-icon-link i,
 .social-icon-link .bi {
-  color: inherit !important;
+  color: var(--text-heading) !important;
   line-height: 1;
   transition: transform var(--transition-fast), color var(--transition-fast);
 }
+
 .social-icon-link:hover,
-.footer-atelier .social-icon-link:hover,
-.footer-atelier a.social-icon-link:hover {
+.card-atelier .social-icon-link:hover {
   background: var(--color-secondary) !important;
   color: #12100E !important;
   border-color: var(--color-secondary) !important;
@@ -1473,12 +1475,34 @@ img {
 }
 .social-icon-link:hover i,
 .social-icon-link:hover .bi,
+.card-atelier .social-icon-link:hover i,
+.card-atelier .social-icon-link:hover .bi {
+  color: #12100E !important;
+  transform: scale(1.12);
+}
+
+/* Footer-specific social icons (always on dark footer background) */
+.footer-atelier .social-icon-link {
+  background: rgba(255, 255, 255, 0.08);
+  color: #EDE7DE !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.footer-atelier .social-icon-link i,
+.footer-atelier .social-icon-link .bi {
+  color: #EDE7DE !important;
+}
+.footer-atelier .social-icon-link:hover,
+.footer-atelier a.social-icon-link:hover {
+  background: var(--color-secondary) !important;
+  color: #12100E !important;
+  border-color: var(--color-secondary) !important;
+  transform: translateY(-3px);
+}
 .footer-atelier .social-icon-link:hover i,
 .footer-atelier .social-icon-link:hover .bi,
 .footer-atelier a.social-icon-link:hover i,
 .footer-atelier a.social-icon-link:hover .bi {
   color: #12100E !important;
-  transform: scale(1.12);
 }
 
 /* ==========================================
