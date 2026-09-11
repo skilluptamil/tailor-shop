@@ -592,23 +592,32 @@ document.addEventListener('DOMContentLoaded', () => {
   /* --------------------------------------------------------------------------
      6. Blog Search & Filter
   -------------------------------------------------------------------------- */
-  const blogSearchInput = document.getElementById('blogSearchInput');
+  const blogSearchInputs = document.querySelectorAll('.blog-search-input, #blogSearchInput');
   const blogArticles = document.querySelectorAll('.blog-card-item');
   const blogCategoryLinks = document.querySelectorAll('.blog-category-filter');
 
-  if (blogSearchInput) {
-    blogSearchInput.addEventListener('input', function () {
-      const term = this.value.toLowerCase().trim();
-      blogArticles.forEach(article => {
-        const title = article.querySelector('.blog-title')?.textContent.toLowerCase() || '';
-        const desc = article.querySelector('.blog-desc')?.textContent.toLowerCase() || '';
-        const cat = article.querySelector('.blog-category')?.textContent.toLowerCase() || '';
+  if (blogSearchInputs.length > 0) {
+    blogSearchInputs.forEach(input => {
+      input.addEventListener('input', function () {
+        const term = this.value.toLowerCase().trim();
+        // Sync values across inputs (mobile top search & desktop sidebar search)
+        blogSearchInputs.forEach(otherInput => {
+          if (otherInput !== input) {
+            otherInput.value = this.value;
+          }
+        });
 
-        if (title.includes(term) || desc.includes(term) || cat.includes(term)) {
-          article.parentElement.style.display = 'block';
-        } else {
-          article.parentElement.style.display = 'none';
-        }
+        blogArticles.forEach(article => {
+          const title = article.querySelector('.blog-title')?.textContent.toLowerCase() || '';
+          const desc = article.querySelector('.blog-desc')?.textContent.toLowerCase() || '';
+          const cat = article.querySelector('.blog-category')?.textContent.toLowerCase() || '';
+
+          if (title.includes(term) || desc.includes(term) || cat.includes(term)) {
+            article.parentElement.style.display = 'block';
+          } else {
+            article.parentElement.style.display = 'none';
+          }
+        });
       });
     });
   }

@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
-<body class="bg-dark-atelier text-white d-flex align-items-center min-vh-100 py-5 position-relative">
+<body class="coming-soon-page bg-dark-atelier text-white d-flex align-items-center min-vh-100 py-5 position-relative">
 
   <div class="position-absolute top-0 end-0 p-3 d-flex gap-2">
     <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
@@ -47,46 +47,50 @@
         </a>
 
         <div class="badge badge-gold mb-3">Seasonal Launch</div>
-        <h1 class="display-4 fw-bold font-editorial mb-3">Something Sublime is Being Stitched</h1>
-        <p class="text-light opacity-75 fs-5 mb-5 mx-auto" style="max-width: 600px;">
+        <h1 class="display-4 fw-bold font-editorial mb-3 coming-soon-title">Something Sublime is Being Stitched</h1>
+        <p class="coming-soon-subtitle fs-5 mb-5 mx-auto" style="max-width: 600px;">
           Our new Autumn/Winter Haute Couture Collection & Bespoke Digital Fitting Salon will unveil shortly.
         </p>
 
         <!-- Live Countdown Timer -->
         <div id="countdownTimer" class="d-flex justify-content-center gap-3 gap-md-4 mb-5">
-          <div class="p-3 bg-surface-dark border border-secondary border-opacity-25 rounded-4 shadow" style="min-width: 85px;">
+          <div class="p-3 countdown-box rounded-4" style="min-width: 85px;">
             <div id="countDays" class="display-5 fw-bold text-gold">30</div>
-            <small class="text-muted text-uppercase fw-semibold" style="font-size: 0.75rem;">Days</small>
+            <small class="countdown-label text-uppercase fw-semibold" style="font-size: 0.75rem;">Days</small>
           </div>
-          <div class="p-3 bg-surface-dark border border-secondary border-opacity-25 rounded-4 shadow" style="min-width: 85px;">
+          <div class="p-3 countdown-box rounded-4" style="min-width: 85px;">
             <div id="countHours" class="display-5 fw-bold text-gold">14</div>
-            <small class="text-muted text-uppercase fw-semibold" style="font-size: 0.75rem;">Hours</small>
+            <small class="countdown-label text-uppercase fw-semibold" style="font-size: 0.75rem;">Hours</small>
           </div>
-          <div class="p-3 bg-surface-dark border border-secondary border-opacity-25 rounded-4 shadow" style="min-width: 85px;">
+          <div class="p-3 countdown-box rounded-4" style="min-width: 85px;">
             <div id="countMinutes" class="display-5 fw-bold text-gold">45</div>
-            <small class="text-muted text-uppercase fw-semibold" style="font-size: 0.75rem;">Minutes</small>
+            <small class="countdown-label text-uppercase fw-semibold" style="font-size: 0.75rem;">Minutes</small>
           </div>
-          <div class="p-3 bg-surface-dark border border-secondary border-opacity-25 rounded-4 shadow" style="min-width: 85px;">
+          <div class="p-3 countdown-box rounded-4" style="min-width: 85px;">
             <div id="countSeconds" class="display-5 fw-bold text-gold">20</div>
-            <small class="text-muted text-uppercase fw-semibold" style="font-size: 0.75rem;">Seconds</small>
+            <small class="countdown-label text-uppercase fw-semibold" style="font-size: 0.75rem;">Seconds</small>
           </div>
         </div>
 
         <!-- VIP Notify Form -->
-        <div class="card bg-surface-dark border border-secondary border-opacity-25 rounded-4 p-4 max-w-700 mx-auto mb-4">
-          <h2 class="h5 text-white mb-2">Be First in Line for the VIP Lookbook</h2>
-          <form class="newsletter-form" id="newsletterForm">
-            <div class="input-group">
-              <input type="email" class="form-control form-control-custom" placeholder="Enter your email" required>
-              <button class="btn btn-gold px-4" type="submit">Get Notified</button>
+        <div class="card border border-secondary border-opacity-25 rounded-4 p-4 p-md-5 coming-soon-notify-card mx-auto mb-4">
+          <h2 class="h4 text-white fw-bold mb-2">Be First in Line for the VIP Lookbook</h2>
+          <p class="notify-card-desc small mb-4 mx-auto" style="max-width: 460px;">Receive a private digital preview of our Autumn/Winter haute couture collection 48 hours before public launch.</p>
+          <form class="newsletter-form coming-soon-notify-form" id="newsletterForm">
+            <div class="input-group notify-input-group">
+              <input type="email" class="form-control form-control-custom" placeholder="Enter your email address" aria-label="Enter your email address" required autocomplete="email">
+              <button class="btn btn-gold btn-notify" type="submit">
+                <span>Get Notified</span>
+                <i class="bi bi-arrow-right"></i>
+              </button>
             </div>
           </form>
         </div>
 
         <div class="d-flex justify-content-center gap-3 mt-4">
-          <a href="#" class="social-icon-link bg-surface-dark text-white"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="social-icon-link bg-surface-dark text-white"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="social-icon-link bg-surface-dark text-white"><i class="bi bi-pinterest"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
         </div>
       </div>
     </div>

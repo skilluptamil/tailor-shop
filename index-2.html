@@ -46,20 +46,20 @@
         <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
           <i class="bi bi-moon-stars"></i>
         </button>
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBoutique" aria-controls="navbarBoutique" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-list fs-1 text-heading"></i>
         </button>
       </div>
 
-      <div class="collapse navbar-collapse" id="navbarBoutique">
+      <div class="collapse navbar-collapse" id="navbarMain">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link nav-link-custom dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Home <i class="bi bi-chevron-down dropdown-chevron"></i>
             </a>
             <ul class="dropdown-menu dropdown-menu-custom">
-              <li><a class="dropdown-item" href="index.html"><i class="bi bi-gem me-2 text-gold"></i> Home 1</a></li>
-              <li><a class="dropdown-item active" href="index-2.html"><i class="bi bi-stars me-2 text-gold"></i> Home 2</a></li>
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+              <li><a class="dropdown-item active" href="index-2.html">Home 2</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -80,15 +80,17 @@
         </ul>
 
         <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <!-- RTL / LTR Switcher Button -->
           <button class="btn btn-icon-square rtl-toggle-btn" title="Toggle RTL/LTR" aria-label="Toggle RTL/LTR">
             <span class="rtl-text fw-bold">RTL</span>
           </button>
-          <button class="btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
+          <!-- Dark / Light Theme Switcher Button -->
+          <button class="btn btn-icon-square theme-toggle-btn" title="Toggle Dark/Light Theme" aria-label="Toggle Theme">
             <i class="bi bi-moon-stars"></i>
           </button>
-          <!-- VIP Booking CTA -->
-          <button class="btn-custom btn-gold btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
-            <i class="bi bi-stars"></i> Book Private Fitting
+          <!-- Book Appointment CTA -->
+          <button class="btn-custom btn-primary-atelier btn-custom-pill" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            <i class="bi bi-calendar-check"></i> Book Appointment
           </button>
         </div>
       </div>
@@ -179,7 +181,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card-atelier">
             <div class="card-img-top-wrapper" style="aspect-ratio: 3/4;">
-              <img src="assets/images/services/service-dress.jpg" alt="Women's Couture Collection" loading="lazy">
+              <img src="assets/images/services/home2-dress.jpg" alt="Women's Couture Collection" loading="lazy">
             </div>
             <span class="badge badge-gold mb-2 align-self-start">Couture Silhouette</span>
             <h3 class="h4 mb-2">Women's Evening & Gala</h3>
@@ -194,7 +196,7 @@
         <div class="col-lg-4 col-md-6">
           <div class="card-atelier">
             <div class="card-img-top-wrapper" style="aspect-ratio: 3/4;">
-              <img src="assets/images/services/service-suit.jpg" alt="Men's Savile Row Tailoring" loading="lazy">
+              <img src="assets/images/services/home2-suit.jpg" alt="Men's Savile Row Tailoring" loading="lazy">
             </div>
             <span class="badge badge-gold mb-2 align-self-start">Artisanal Menswear</span>
             <h3 class="h4 mb-2">Men's Sartorial Line</h3>
@@ -209,9 +211,9 @@
         <div class="col-lg-4 col-md-12">
           <div class="card-atelier">
             <div class="card-img-top-wrapper" style="aspect-ratio: 3/4;">
-              <img src="assets/images/services/service-bridal.jpg" alt="Royal Bridal Suite" loading="lazy">
+              <img src="assets/images/hero/home2-bridal.jpg" alt="Royal Bridal Suite" loading="lazy">
             </div>
-            <span class="badge badge-burgundy mb-2 align-self-start">Bridal Atelier</span>
+            <span class="badge badge-gold mb-2 align-self-start">Bridal Atelier</span>
             <h3 class="h4 mb-2">The Royal Bridal Suite</h3>
             <p class="text-muted small mb-4">Handcrafted bridal gowns with Chantilly lace, crystal pearls, and hand-embroidered heritage lehengas.</p>
             <div class="mt-auto">
@@ -235,7 +237,7 @@
           </p>
           <div class="card bg-surface border-0 p-4 rounded-4 shadow-sm mb-4">
             <div class="d-flex align-items-center gap-3">
-              <img src="assets/images/team/team-2.jpg" alt="Helena Vance" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
+              <img src="assets/images/team/home2-designer.jpg" alt="Helena Vance" class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover;">
               <div>
                 <h5 class="mb-0 h6 text-heading">Helena Vance</h5>
                 <small class="text-gold fw-semibold">Head of Couture & Silhouette Design</small>
@@ -247,7 +249,7 @@
           </button>
         </div>
         <div class="col-lg-6 order-lg-1">
-          <img src="assets/images/services/service-restoration.jpg" alt="Artisan Tailoring Studio" class="rounded-4 shadow-lg border border-1 w-100" loading="lazy">
+          <img src="assets/images/about/home2-studio.jpg" alt="Artisan Tailoring Studio" class="rounded-4 shadow-lg border border-1 w-100" loading="lazy">
         </div>
       </div>
     </div>
@@ -263,39 +265,43 @@
       </div>
 
       <div class="row g-4">
+        <!-- 1. Italian Mulberry Silk -->
         <div class="col-md-6 col-lg-3">
-          <div class="fabric-card p-3">
-            <img src="assets/images/fabrics/fabric-silk.jpg" alt="Italian Mulberry Silk" class="rounded-3 fabric-swatch-img mb-3">
-            <h4 class="h6 mb-1">Italian Mulberry Silk</h4>
-            <p class="text-muted small mb-2">35 Momme heavy silk with celestial liquid luster.</p>
-            <span class="badge badge-soft">Evening Wear</span>
+          <div class="fabric-card p-3 h-100 d-flex flex-column">
+            <img src="assets/images/fabrics/fabric-silk.jpg" alt="Italian Mulberry Silk" class="rounded-3 fabric-swatch-img mb-3" loading="lazy">
+            <h4 class="h6 mb-1 fw-bold">Italian Mulberry Silk</h4>
+            <p class="text-muted small mb-3 flex-grow-1">35 Momme heavy silk with celestial liquid luster.</p>
+            <span class="badge badge-gold align-self-start mt-auto">Evening Wear</span>
           </div>
         </div>
 
+        <!-- 2. Pure Irish Flax Linen -->
         <div class="col-md-6 col-lg-3">
-          <div class="fabric-card p-3">
-            <img src="assets/images/fabrics/fabric-linen.jpg" alt="Pure Irish Linen" class="rounded-3 fabric-swatch-img mb-3">
-            <h4 class="h6 mb-1">Pure Irish Flax Linen</h4>
-            <p class="text-muted small mb-2">Crisp, breathable, and naturally temperature regulating.</p>
-            <span class="badge badge-soft">Resort & Suiting</span>
+          <div class="fabric-card p-3 h-100 d-flex flex-column">
+            <img src="assets/images/fabrics/fabric-linen.jpg" alt="Pure Irish Flax Linen" class="rounded-3 fabric-swatch-img mb-3" loading="lazy">
+            <h4 class="h6 mb-1 fw-bold">Pure Irish Flax Linen</h4>
+            <p class="text-muted small mb-3 flex-grow-1">Crisp, breathable, and naturally temperature regulating.</p>
+            <span class="badge badge-gold align-self-start mt-auto">Resort & Suiting</span>
           </div>
         </div>
 
+        <!-- 3. Royal Micro Velvet -->
         <div class="col-md-6 col-lg-3">
-          <div class="fabric-card p-3">
-            <img src="assets/images/fabrics/fabric-velvet.jpg" alt="Royal Micro Velvet" class="rounded-3 fabric-swatch-img mb-3">
-            <h4 class="h6 mb-1">Royal Micro Velvet</h4>
-            <p class="text-muted small mb-2">Deep pile velvet with dense, light-absorbing richness.</p>
-            <span class="badge badge-soft">Blouses & Jackets</span>
+          <div class="fabric-card p-3 h-100 d-flex flex-column">
+            <img src="assets/images/fabrics/fabric-velvet.jpg" alt="Royal Micro Velvet" class="rounded-3 fabric-swatch-img mb-3" loading="lazy">
+            <h4 class="h6 mb-1 fw-bold">Royal Micro Velvet</h4>
+            <p class="text-muted small mb-3 flex-grow-1">Deep pile velvet with dense, light-absorbing richness.</p>
+            <span class="badge badge-gold align-self-start mt-auto">Blouses & Jackets</span>
           </div>
         </div>
 
+        <!-- 4. Heritage Gold Brocade -->
         <div class="col-md-6 col-lg-3">
-          <div class="fabric-card p-3">
-            <img src="assets/images/fabrics/fabric-brocade.jpg" alt="Heritage Gold Brocade" class="rounded-3 fabric-swatch-img mb-3">
-            <h4 class="h6 mb-1">Heritage Gold Brocade</h4>
-            <p class="text-muted small mb-2">Authentic handloom zari weaving with metallic gold relief.</p>
-            <span class="badge badge-soft">Bridal Couture</span>
+          <div class="fabric-card p-3 h-100 d-flex flex-column">
+            <img src="assets/images/fabrics/fabric-brocade.jpg" alt="Heritage Gold Brocade" class="rounded-3 fabric-swatch-img mb-3" loading="lazy">
+            <h4 class="h6 mb-1 fw-bold">Heritage Gold Brocade</h4>
+            <p class="text-muted small mb-3 flex-grow-1">Authentic handloom zari weaving with metallic gold relief.</p>
+            <span class="badge badge-gold align-self-start mt-auto">Bridal Couture</span>
           </div>
         </div>
       </div>
@@ -322,7 +328,7 @@
           <div class="p-4 rounded-4 bg-surface-dark border border-secondary border-opacity-25 h-100">
             <div class="text-gold fs-2 mb-3"><i class="bi bi-rulers"></i></div>
             <h4 class="text-white h5 mb-2">Bespoke Fit Promise</h4>
-            <p class="text-muted small mb-0">No off-the-rack templates. Patterns are drafted exclusively to your skeletal alignment and contours.</p>
+            <p class="text-light opacity-75 small mb-0">No off-the-rack templates. Patterns are drafted exclusively to your skeletal alignment and contours.</p>
           </div>
         </div>
 
@@ -330,7 +336,7 @@
           <div class="p-4 rounded-4 bg-surface-dark border border-secondary border-opacity-25 h-100">
             <div class="text-gold fs-2 mb-3"><i class="bi bi-gem"></i></div>
             <h4 class="text-white h5 mb-2">Rare Sourcing</h4>
-            <p class="text-muted small mb-0">Direct mill relationships ensure exclusive textures, limited edition silks, and sustainable wools.</p>
+            <p class="text-light opacity-75 small mb-0">Direct mill relationships ensure exclusive textures, limited edition silks, and sustainable wools.</p>
           </div>
         </div>
 
@@ -338,7 +344,7 @@
           <div class="p-4 rounded-4 bg-surface-dark border border-secondary border-opacity-25 h-100">
             <div class="text-gold fs-2 mb-3"><i class="bi bi-clock-history"></i></div>
             <h4 class="text-white h5 mb-2">Guaranteed On-Time Delivery</h4>
-            <p class="text-muted small mb-0">Strict atelier timelines guarantee your gala or wedding garment is delivered well ahead of schedule.</p>
+            <p class="text-light opacity-75 small mb-0">Strict atelier timelines guarantee your gala or wedding garment is delivered well ahead of schedule.</p>
           </div>
         </div>
       </div>
@@ -370,22 +376,34 @@
   <footer class="footer-atelier">
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <a class="brand-logo mb-3 text-decoration-none" href="index.html">
+        <!-- Col 1: Brand & Atelier Address -->
+        <div class="col-lg-3 col-md-6">
+          <a class="brand-logo mb-3 text-decoration-none d-inline-flex align-items-center gap-2" href="index.html">
             <span class="brand-icon"><i class="bi bi-scissors"></i></span>
             <span class="text-white" style="line-height: 1;">SARTORIA</span>
           </a>
-          <p class="small text-muted mb-4">
+          <p class="small text-muted mb-3">
             Luxury bespoke tailoring and custom dressmaking studio. Delivering exquisite garments crafted with anatomical precision, hand embroidery, and premium heritage fabrics.
           </p>
+          <div class="footer-contact-info mb-3">
+            <div class="footer-contact-item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>742 Fifth Avenue, 4th Floor, Manhattan, NY 10019</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:+18005558245">+1 (800) 555-8245</a>
+            </div>
+          </div>
           <div class="d-flex gap-2">
-            <a href="#" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
-            <a href="#" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="https://wa.me/18005558245" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
+        <!-- Col 2: Quick Links -->
         <div class="col-lg-2 col-md-6">
           <h5 class="footer-heading mb-3">Quick Links</h5>
           <ul class="footer-links">
@@ -398,25 +416,46 @@
           </ul>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-services-col">
-          <h5 class="footer-heading mb-3">Tailoring Services</h5>
+        <!-- Col 3: Tailoring Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Services</h5>
           <ul class="footer-links">
             <li><a href="services.html#service-bridal" data-service="bridal">Bridal Wear Couture</a></li>
             <li><a href="services.html#service-suits" data-service="suits">Men's Bespoke Suits</a></li>
-            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse Stitching</a></li>
-            <li><a href="services.html#service-shirts" data-service="shirts">Bespoke Shirts & Trousers</a></li>
-            <li><a href="services.html#service-blazers" data-service="blazers">Luxury Blazers & Overcoats</a></li>
-            <li><a href="alterations.html#service-alterations" data-service="alterations">Express 24h Alterations</a></li>
+            <li><a href="services.html#service-blouse" data-service="blouse">Designer Blouse</a></li>
+            <li><a href="services.html#service-shirts" data-service="shirts">Bespoke Shirts</a></li>
+            <li><a href="services.html#service-blazers" data-service="blazers">Luxury Blazers</a></li>
+            <li><a href="alterations.html#service-alterations" data-service="alterations">24h Alterations</a></li>
           </ul>
         </div>
 
+        <!-- Col 4: Studio Timing -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading mb-3">Studio Timing</h5>
+          <ul class="footer-timing-list">
+            <li class="footer-timing-item">
+              <span class="footer-timing-day">Monday – Friday</span>
+              <span class="footer-timing-hours">9:00 AM – 7:30 PM</span>
+            </li>
+            <li class="footer-timing-item">
+              <span class="footer-timing-day">Saturday</span>
+              <span class="footer-timing-hours">9:00 AM – 6:00 PM</span>
+            </li>
+            <li class="footer-timing-item mb-0">
+              <span class="footer-timing-day">Sunday</span>
+              <span class="footer-timing-vip">VIP Fitting Only</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Newsletter -->
         <div class="col-lg-3 col-md-6">
           <h5 class="footer-heading mb-3">Newsletter</h5>
           <p class="small text-muted mb-3">Subscribe for seasonal fashion lookbooks, fabric care guides, and exclusive tailoring offers.</p>
           <form class="newsletter-form" id="newsletterForm">
             <div class="input-group">
               <input type="email" class="form-control form-control-custom" placeholder="Your email address" required>
-              <button class="btn btn-gold" type="submit"><i class="bi bi-send-fill"></i></button>
+              <button class="btn btn-gold" type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
             </div>
           </form>
           <div class="mt-3 text-muted small">
@@ -430,8 +469,6 @@
           © 2026 Sartoria. All rights reserved. Designed for discerning tailoring studios.
         </div>
         <div class="d-flex gap-3">
-          <a href="documentation/index.html">Documentation</a>
-          <a href="admin/index.html">Admin Dashboard</a>
           <a href="404.html">404 Demo</a>
           <a href="coming-soon.html">Coming Soon</a>
           <a href="maintenance.html">Maintenance</a>

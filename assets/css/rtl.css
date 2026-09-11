@@ -319,13 +319,25 @@
 /* ==========================================
    7. Cards, Lists & Grids
    ========================================== */
+[dir="rtl"] .pricing-features li,
 [dir="rtl"] .pricing-features-list li {
+  justify-content: center;
+  text-align: center;
+}
+
+[dir="rtl"] .pricing-popular-badge {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+[dir="rtl"] .tier-card-features li {
   text-align: right;
 }
 
-[dir="rtl"] .pricing-features-list li i {
-  margin-left: 0.65rem;
+[dir="rtl"] .tier-card-price small {
   margin-right: 0;
+  margin-left: 0.25rem;
 }
 
 [dir="rtl"] .alteration-row-card {
@@ -457,14 +469,44 @@
   padding: 4px 14px 4px 4px !important;
 }
 
+[dir="rtl"] .coming-soon-notify-form .notify-input-group {
+  padding: 5px 18px 5px 5px !important;
+}
+
+@media (max-width: 575.98px) {
+  [dir="rtl"] .coming-soon-notify-form .notify-input-group {
+    padding: 0 !important;
+  }
+}
+
 [dir="rtl"] .newsletter-form .input-group .form-control,
 [dir="rtl"] .newsletter-form .input-group .form-control-custom {
   text-align: right !important;
 }
 
+@media (max-width: 575.98px) {
+  [dir="rtl"] .coming-soon-notify-form .notify-input-group .form-control,
+  [dir="rtl"] .coming-soon-notify-form .notify-input-group .form-control-custom {
+    text-align: center !important;
+  }
+}
+
 [dir="rtl"] .footer-atelier .bi-shield-check {
   margin-left: 0.35rem;
   margin-right: 0;
+}
+
+[dir="rtl"] .footer-contact-item {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-timing-item {
+  text-align: right;
+}
+
+[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 4px;
 }
 
 /* ==========================================

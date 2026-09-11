@@ -37,7 +37,8 @@
     padding: 2.25rem;
   }
 
-  .pricing-card {
+  .pricing-card,
+  .tier-card {
     padding: 2.75rem 2.25rem;
   }
 
@@ -144,7 +145,7 @@
 @media (max-width: 991.98px) {
   /* Navigation Drawer */
   .navbar-atelier {
-    padding: 0.75rem 0;
+    padding: 0.45rem 0;
   }
 
   .navbar-collapse {
@@ -184,8 +185,9 @@
     height: 90px;
   }
 
-  /* Pricing Cards Scale Reset */
-  .pricing-card.featured {
+  /* Pricing & Tier Cards Scale Reset */
+  .pricing-card.featured,
+  .tier-card.featured {
     transform: none;
   }
 
@@ -226,6 +228,15 @@
     background: rgba(0, 0, 0, 0.5);
     z-index: 1040;
     backdrop-filter: blur(4px);
+  }
+
+  /* Blog Search Box Mobile & Tablet Placement */
+  .blog-search-top-mobile {
+    margin-bottom: 2rem !important;
+  }
+  .blog-search-top-mobile .card {
+    background-color: var(--bg-surface) !important;
+    border-color: var(--border-color) !important;
   }
 }
 
@@ -332,6 +343,18 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* Coming Soon Countdown on Tablet/Phablet */
+  #countdownTimer {
+    gap: 0.75rem !important;
+  }
+  #countdownTimer > div {
+    min-width: 72px !important;
+    padding: 0.85rem 0.5rem !important;
+  }
+  #countdownTimer .display-5 {
+    font-size: 1.85rem !important;
+  }
 }
 
 /* ==========================================================================
@@ -355,6 +378,18 @@
 
   .btn-custom-pill {
     width: 100%;
+  }
+
+  /* Blog Search Box on 360px compact screens */
+  .blog-search-top-mobile {
+    margin-bottom: 1.25rem !important;
+  }
+  .blog-search-top-mobile .card {
+    padding: 1rem !important;
+  }
+  .blog-search-top-mobile .input-group .form-control-custom {
+    font-size: 0.875rem !important;
+    padding: 0.6rem 0.85rem !important;
   }
 
   /* Filter buttons */
@@ -386,6 +421,53 @@
     width: 36px;
     height: 36px;
     font-size: 0.95rem;
+  }
+
+  /* Coming Soon Countdown & Notify on Mobile */
+  #countdownTimer {
+    gap: 0.45rem !important;
+  }
+  #countdownTimer > div {
+    min-width: 60px !important;
+    padding: 0.55rem 0.25rem !important;
+    border-radius: 0.75rem !important;
+  }
+  #countdownTimer .display-5 {
+    font-size: 1.45rem !important;
+  }
+}
+
+/* Small Screens Form Stacking (< 576px) */
+@media (max-width: 575.98px) {
+  .coming-soon-notify-card {
+    padding: 1.5rem 1.15rem !important;
+  }
+  .coming-soon-notify-form .notify-input-group {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  .coming-soon-notify-form .notify-input-group:focus-within {
+    box-shadow: none !important;
+  }
+  .coming-soon-notify-form .notify-input-group .form-control,
+  .coming-soon-notify-form .notify-input-group .form-control-custom {
+    background-color: #FFFFFF !important;
+    border-radius: var(--radius-full) !important;
+    padding: 0.75rem 1.25rem !important;
+    width: 100% !important;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+  }
+  .coming-soon-notify-form .btn-notify {
+    width: 100% !important;
+    height: 48px;
+    border-radius: var(--radius-full) !important;
+    box-shadow: 0 4px 15px rgba(197, 168, 128, 0.3) !important;
   }
 }
 
